@@ -264,6 +264,8 @@ namespace DYP
 
         public float MovementSpeed { get { return m_MovementSettings.Speed; } set { m_MovementSettings.Speed = value; } }
 
+        public float MaxJumpSpeed { get { return m_MaxJumpSpeed; } set { m_MaxJumpSpeed = value; } }
+
         private float m_VelocityXSmoothing;
 
         // Action
