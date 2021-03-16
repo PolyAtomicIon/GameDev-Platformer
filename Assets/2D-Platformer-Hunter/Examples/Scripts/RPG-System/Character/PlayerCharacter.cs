@@ -19,7 +19,7 @@ public class PlayerCharacter : MonoBehaviour, IDamagable, IHasInventory, IHasEqu
     public Weapon curWeapon;
     
 	public float Health { get; }
-	public void SetDamage (float damage){
+	public void TakeDamage (float damage){
         Debug.Log("Soo We will change Health variabe");
     }
 
