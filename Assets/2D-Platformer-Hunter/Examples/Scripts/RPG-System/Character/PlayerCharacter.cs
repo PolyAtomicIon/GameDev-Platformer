@@ -16,6 +16,13 @@ public class PlayerCharacter : MonoBehaviour, IDamagable, IHasInventory, IHasEqu
     private Equipment m_Equipment;
     public Equipment Equipment { get { return m_Equipment; } }
 
+    public Weapon curWeapon;
+    
+	public float Health { get; }
+	public void SetDamage (float damage){
+        Debug.Log("Soo We will change Health variabe");
+    }
+
     private void Awake()
     {
         m_StatController = GetComponent<CharacterStatController>();
@@ -29,6 +36,15 @@ public class PlayerCharacter : MonoBehaviour, IDamagable, IHasInventory, IHasEqu
     private void Start()
     {
         initCallback();
+    }
+
+    void Update()
+    {
+        if( Input.GetMouseButtonDown(0) ){
+            Debug.Log("hello");
+            IShootable shootableObject = curWeapon.GetComponent<IShootable>();
+            shootableObject.Shoot();
+        }
     }
 
     private void initCallback()
