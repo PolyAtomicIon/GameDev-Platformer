@@ -48,7 +48,7 @@ namespace DYP
         [System.Serializable]
         class WallInteraction
         {
-            public bool CanWallSlide = true;
+            public bool CanWallSlide = false;
             public float WallStickTime = 0.15f;
             [HideInInspector]
             public float WallStickTimer = 0.0f;
@@ -58,7 +58,7 @@ namespace DYP
             public bool CanWallClimb = false;
             public float WallClimbSpeed = 2;
 
-            public bool CanWallJump = true;
+            public bool CanWallJump = false;
             public Vector2 ClimbForce = new Vector2(12, 16);
             public Vector2 OffForce = new Vector2(8, 15);
             public Vector2 LeapForce = new Vector2(18, 17);
@@ -263,6 +263,8 @@ namespace DYP
         public Vector3 InputVelocity { get { return m_Velocity; } }
 
         public float MovementSpeed { get { return m_MovementSettings.Speed; } set { m_MovementSettings.Speed = value; } }
+
+        public float MaxJumpSpeed { get { return m_MaxJumpSpeed; } set { m_MaxJumpSpeed = value; } }
 
         private float m_VelocityXSmoothing;
 

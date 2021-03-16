@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 7637016947468089689}
   - component: {fileID: 2000041246621388756}
   - component: {fileID: 524540820}
+  - component: {fileID: 8814360276358326915}
   m_Layer: 8
   m_Name: OrangeCharacter
   m_TagString: Player
@@ -147,22 +148,22 @@ MonoBehaviour:
     FallingJumpPaddingTime: 0.09
     WillJumpPaddingTime: 0.15
   m_WallInteraction:
-    CanWallSlide: 1
+    CanWallSlide: 0
     WallStickTime: 0.15
     WallStickTimer: 0
     WallSlideSpeedLoss: 0.05
     WallSlidingSpeedMax: 2
     CanWallClimb: 0
     WallClimbSpeed: 2
-    CanWallJump: 1
+    CanWallJump: 0
     ClimbForce: {x: 12, y: 16}
     OffForce: {x: 8, y: 15}
     LeapForce: {x: 18, y: 17}
-    CanGrabLedge: 1
+    CanGrabLedge: 0
     LedgeDetectionOffset: 0.1
     WallDirX: 0
   m_Dash:
-    Module: {fileID: 11400000, guid: 18d6a6d6e86582242b2080c03da225fe, type: 2}
+    Module: {fileID: 0}
   m_CustomAction:
     Module: {fileID: 0}
 --- !u!114 &2000041246621388756
@@ -190,6 +191,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Appearance: {fileID: 862146025}
+--- !u!114 &8814360276358326915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 524540819}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6fa7cbb3b1df16a79a4c343345b6af7d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerController: {fileID: 7637016947468089689}
+  SpeedUpValue: 10
 --- !u!1 &1670556625
 GameObject:
   m_ObjectHideFlags: 0
@@ -235,6 +250,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -246,6 +262,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -314,6 +331,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -325,6 +343,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0

@@ -45,6 +45,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -56,6 +57,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -227,14 +229,14 @@ MonoBehaviour:
     FallingJumpPaddingTime: 0.09
     WillJumpPaddingTime: 0.15
   m_WallInteraction:
-    CanWallSlide: 1
+    CanWallSlide: 0
     WallStickTime: 0.15
     WallStickTimer: 0
     WallSlideSpeedLoss: 0.05
     WallSlidingSpeedMax: 2
     CanWallClimb: 0
     WallClimbSpeed: 2
-    CanWallJump: 1
+    CanWallJump: 0
     ClimbForce: {x: 12, y: 16}
     OffForce: {x: 8, y: 15}
     LeapForce: {x: 18, y: 17}
@@ -242,7 +244,7 @@ MonoBehaviour:
     LedgeDetectionOffset: 0.1
     WallDirX: 0
   m_Dash:
-    Module: {fileID: 11400000, guid: 306b38766d9ec4c4f90f833d5be3dc83, type: 2}
+    Module: {fileID: 0}
   m_CustomAction:
     Module: {fileID: 0}
 --- !u!114 &114368022569154642
