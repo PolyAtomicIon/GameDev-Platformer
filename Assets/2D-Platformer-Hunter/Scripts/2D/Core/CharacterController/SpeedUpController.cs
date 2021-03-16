@@ -26,7 +26,10 @@ public class SpeedUpController : MonoBehaviour
 
     private void speedUpOnHoldingShift()
     {
+            Debug.Log("hellofffs");
+
         if (Input.GetKeyDown(KeyCode.LeftShift)) {
+            Debug.Log("hello");
             isRunning = true;
             playerController.MovementSpeed = RunSpeed;
         } else if (Input.GetKeyUp(KeyCode.LeftShift)) {
