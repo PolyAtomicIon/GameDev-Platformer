@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 7637016947468089689}
   - component: {fileID: 2000041246621388756}
   - component: {fileID: 524540820}
+  - component: {fileID: 8814360276358326915}
   m_Layer: 8
   m_Name: OrangeCharacter
   m_TagString: Player
@@ -190,6 +191,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Appearance: {fileID: 862146025}
+--- !u!114 &8814360276358326915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 524540819}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6fa7cbb3b1df16a79a4c343345b6af7d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerController: {fileID: 7637016947468089689}
+  SpeedUpValue: 10
 --- !u!1 &1670556625
 GameObject:
   m_ObjectHideFlags: 0
