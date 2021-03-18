@@ -16,7 +16,7 @@ public class PlayerCharacter : MonoBehaviour, IDamagable, IHasInventory, IHasEqu
     private Equipment m_Equipment;
     public Equipment Equipment { get { return m_Equipment; } }
 
-    public Weapon curWeapon;
+    private CombatInventory Weapon;
     
 	public float Health { get; }
 	public void TakeDamage (float damage){
@@ -31,6 +31,9 @@ public class PlayerCharacter : MonoBehaviour, IDamagable, IHasInventory, IHasEqu
 
         m_Inventory = GetComponent<Inventory>();
         m_Equipment = GetComponent<Equipment>();
+
+        Weapon = GetComponent<CombatInventory>();
+        Weapon.Initialize();
     }
 
     private void Start()
@@ -40,10 +43,16 @@ public class PlayerCharacter : MonoBehaviour, IDamagable, IHasInventory, IHasEqu
 
     void Update()
     {
+        if( Input.GetKeyDown(KeyCode.Q) ){
+            Weapon.changeWeapon();
+        }
+
         if( Input.GetMouseButtonDown(0) ){
-            Debug.Log("hello");
-            IShootable shootableObject = curWeapon.GetComponent<IShootable>();
-            shootableObject.Shoot();
+            Weapon.Attack();
+        }
+
+        else if( Input.GetMouseButtonDown(1) ){
+            Debug.Log("ABILITY ATTACK");
         }
     }
 
