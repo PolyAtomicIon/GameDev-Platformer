@@ -5,7 +5,7 @@ using UnityEngine;
 public class TudaSudaEnemy : Enemy
 {
 
-    public Weapon weapon;
+    // public Weapon weapon;
 
     public override void Behave(){
         Vector3 curPosition = transform.position;
