@@ -46,8 +46,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d2cc6b3ccbe90d44b2e1424719ae04c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _amplitude: 1
-  _frequency: 2.5
+  _amplitude: {x: 1, y: 1}
+  _frequency: {x: 2.5, y: 2.5}
+  initialPos: {x: 0, y: 0, z: 0}
+  HealthTextLabel: {fileID: 0}
 --- !u!50 &7825474662246266257
 Rigidbody2D:
   serializedVersion: 4

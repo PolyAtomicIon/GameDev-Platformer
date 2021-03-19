@@ -5,7 +5,6 @@ using System;
 [System.Serializable]
 public class RangedWeapon : Weapon
 {
-
     public float offset;
 
     public GameObject projectile;

@@ -14,13 +14,13 @@ public class Enemy : MonoBehaviour, IDamagable
     // initial positin by X axis
     public Vector3 initialPos;
 
-	public float Health { get; }    
-    private TextMeshProUGUI HealthTextLabel;
+	public float Health { get; set; }    
+    public TextMeshProUGUI HealthTextLabel;
 
-	public void TakeDamage (float damage){
+	public virtual void TakeDamage (float damage){
         Debug.Log("damge taken");
 
-        // Health -= damage;
+        Health -= damage;
         // HealthTextLabel.text = Health.ToString();
 
         Debug.Log(damage);

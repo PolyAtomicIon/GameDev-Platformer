@@ -2,22 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TudaSudaEnemy : Enemy
+public class UpDownEnemy : Enemy
 {
-
-    public Weapon weapon;
 
     public override void Behave(){
         Vector3 curPosition = transform.position;
-        curPosition.x = initialPos.x + Mathf.Cos(Time.time * _frequency.x) * _amplitude.x;
+        curPosition.y = initialPos.y + Mathf.Cos(Time.time * _frequency.y) * _amplitude.y;
 
         // Debug.Log(curPosition);
 
         transform.position = curPosition;
-    }
-
-    private void Update() {
-        // weapon.Attack();
     }
 
 }

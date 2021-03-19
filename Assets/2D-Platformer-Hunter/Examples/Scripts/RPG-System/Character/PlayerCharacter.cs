@@ -3,6 +3,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using DYP;
+using UnityEngine.UI; // Required when Using UI elements.
+using TMPro;
 
 public class PlayerCharacter : MonoBehaviour, IDamagable, IHasInventory, IHasEquipment
 {
@@ -18,7 +20,8 @@ public class PlayerCharacter : MonoBehaviour, IDamagable, IHasInventory, IHasEqu
 
     private CombatInventory Weapon;
     
-	public float Health { get; }
+	public float Health { get; set; }
+    TextMeshProUGUI HealthTextLabel ;
 	public void TakeDamage (float damage){
         Debug.Log("Soo We will change Health variabe");
     }
