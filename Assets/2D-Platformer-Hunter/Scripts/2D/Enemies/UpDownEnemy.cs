@@ -6,12 +6,12 @@ public class UpDownEnemy : Enemy
 {
 
     public override void Behave(){
-        Vector3 curPosition = transform.position;
-        curPosition.y = initialPos.y + Mathf.Cos(Time.time * _frequency.y) * _amplitude.y;
+        // Vector3 curPosition = transform.position;
+        // curPosition.y = initialPos.y + Mathf.Cos(Time.time * _frequency.y) * _amplitude.y;
 
-        // Debug.Log(curPosition);
+        // // Debug.Log(curPosition);
 
-        transform.position = curPosition;
+        // transform.position = curPosition;
     }
 
 }

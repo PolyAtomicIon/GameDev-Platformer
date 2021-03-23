@@ -26,7 +26,6 @@ public class SpeedUpController : MonoBehaviour
 
     private void speedUpOnHoldingShift()
     {
-            Debug.Log("hellofffs");
 
         if (Input.GetKeyDown(KeyCode.LeftShift)) {
             Debug.Log("hello");

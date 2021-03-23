@@ -6,16 +6,11 @@ using UnityEngine.UI; // Required when Using UI elements.
 using TMPro;
 
 public class Enemy : MonoBehaviour, IDamagable
-{
-
-    public Vector2 _amplitude = new Vector2(1, 1);
-    public Vector2 _frequency = new Vector2(2.5f, 2.5f);
-
-    // initial positin by X axis
-    public Vector3 initialPos;
-
+{ 
 	public float Health { get; set; }    
     public TextMeshProUGUI HealthTextLabel;
+
+    public Rigidbody2D rb2D;
 
 	public virtual void TakeDamage (float damage){
         Debug.Log("damge taken");
@@ -28,20 +23,15 @@ public class Enemy : MonoBehaviour, IDamagable
     }
 
     public virtual void Behave(){
-        Vector3 curPosition = transform.position;
-        curPosition.x = initialPos.x + Mathf.Cos(Time.time * _frequency.x) * _amplitude.x;
-        curPosition.y = initialPos.y + Mathf.Cos(Time.time * _frequency.y) * _amplitude.y;
-
-        // Debug.Log(curPosition);
-
-        transform.position = curPosition;
+        Debug.Log("MOVES... will move..");
     }
 
     public void Start() {
-        initialPos = transform.position;
+        rb2D = GetComponent<Rigidbody2D>();
     }
 
-    public void Update () {
+
+    public void FixedUpdate () {
         Behave();
     }
 
