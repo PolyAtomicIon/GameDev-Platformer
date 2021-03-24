@@ -8,15 +8,14 @@ using TMPro;
 public class Enemy : MonoBehaviour, IDamagable
 { 
 	public float Health { get; set; }    
-    public TextMeshProUGUI HealthTextLabel;
 
+    [HideInInspector]
     public Rigidbody2D rb2D;
 
 	public virtual void TakeDamage (float damage){
         Debug.Log("damge taken");
 
         Health -= damage;
-        // HealthTextLabel.text = Health.ToString();
 
         Debug.Log(damage);
         Destroy(gameObject);
