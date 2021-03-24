@@ -122,7 +122,7 @@ GameObject:
   - component: {fileID: 8326345800403291535}
   - component: {fileID: 8326345800403291568}
   - component: {fileID: 8326345800403291571}
-  - component: {fileID: 2239613777712482775}
+  - component: {fileID: 6971995406163358237}
   m_Layer: 8
   m_Name: EnemyTudaSuda
   m_TagString: Enemy
@@ -193,7 +193,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &2239613777712482775
+--- !u!114 &6971995406163358237
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -202,10 +202,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 8326345800403291570}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b3245d8942e4e5e4cb2d59ca2413edc1, type: 3}
+  m_Script: {fileID: 11500000, guid: 6596c7b34c069e8469f2eae478fd9b08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HealthTextLabel: {fileID: 0}
   rb2D: {fileID: 0}
   speed: 100
   direction: 1

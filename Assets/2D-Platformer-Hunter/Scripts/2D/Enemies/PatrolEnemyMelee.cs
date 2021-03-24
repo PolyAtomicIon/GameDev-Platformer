@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TudaSudaEnemy : Enemy
+public class PatrolEnemyMelee : Enemy
 { 
 
     public float speed = 100f;
@@ -20,6 +20,28 @@ public class TudaSudaEnemy : Enemy
             transform.eulerAngles = new Vector3( 0, -180, 0 );
     }
 
+    void checkForGround(){
+        RaycastHit2D groundInfo = Physics2D.Raycast(groundDetection.position, Vector2.down, 1);
+        if( !groundInfo.collider ){
+            Debug.Log("move true");
+            changeDirection(); 
+        }
+    }
+
+    void checkForOjectForward() {
+        RaycastHit2D objectInfo = Physics2D.Raycast(groundDetection.position, Vector2.right * direction, 1);
+        if( objectInfo.collider ){
+            Debug.Log("object found");
+            // changeDirection(); 
+            if( objectInfo.collider.CompareTag("Player") ){
+                Debug.Log("attack");
+            }
+            else{
+                changeDirection();
+            }
+        }
+    }
+
     public override void Behave(){
         Vector3 newVelocity = new Vector3( direction * Time.fixedDeltaTime * speed, rb2D.velocity.y, 0 );
         rb2D.velocity = newVelocity;
@@ -34,11 +56,12 @@ public class TudaSudaEnemy : Enemy
     }
 
     private void Update() {
-        RaycastHit2D groundInfo = Physics2D.Raycast(groundDetection.position, Vector2.down, distance);
-        if( !groundInfo.collider ){
-            Debug.Log("move true");
-            changeDirection(); 
+
+        if( isGrounded() ){ 
+            checkForGround();
         }
+
+        checkForOjectForward();
     }
 
 }

@@ -1203,6 +1203,11 @@ PrefabInstance:
       propertyPath: m_LocalPosition.x
       value: 1.66
       objectReference: {fileID: 0}
+    - target: {fileID: 6971995406163358237, guid: 5b2562f2d2181d84e9dde2d88afce3af,
+        type: 3}
+      propertyPath: distance
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8326345800403291535, guid: 5b2562f2d2181d84e9dde2d88afce3af,
         type: 3}
       propertyPath: m_RootOrder
@@ -1261,7 +1266,7 @@ PrefabInstance:
     - target: {fileID: 8326345800403291568, guid: 5b2562f2d2181d84e9dde2d88afce3af,
         type: 3}
       propertyPath: m_Constraints
-      value: 6
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 8326345800403291570, guid: 5b2562f2d2181d84e9dde2d88afce3af,
         type: 3}
@@ -6876,7 +6881,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   version: 1
   data:
-    dataString: UEsDBBQAAAgIAAAwIez4J+Y6aAIAABIFAAALACQAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFlVMty2jAU/RVG68LYBAh01zqEdJHHlHay8UbI11iDLHn0CJAM/94rWY4d6o3lc5/n3Ct/EC5NA8wqvdG8eFQFkO8j4s/k26g3PsCJ7pXc8nfofF55YSvvRIPPb2q5Qjz1YUbVYDVnP+ReeOcEQSd5qXS9LvaQKWMNwiUVBtCklfXREqGPETnha7zyIWc8TW/96R1Pq2R0wSMDaUEPXNNkMlvhs0xjyPx24r9X01mMHM8CsFzN05DCSSZo3UDh+fSZ0ukiZkjnbS2JXKOPT86UENzERok9N0GIjDbGIU10KDhF4qG7dOIjKuD7ynoaw/DnsjRgoy6anu+4RgXbvOSnamWtqTm0vb1R4Xyl28UydNUmffzPPm7ZlVrVD13dNPE1bMXZ4Tc9M2rsQPchfDdoPUh0pOJAdwJeK5BPaqOVkwUarXY+1BmY3vWfn9SyCtihx9tWr0DX9Jp3Y+6G7DlcAvtTJni986bJrAW2QgXFw26Axtn8wobD5piYAlHfxV8Df+h+uGLRcM+1sWiKLKVvb6ec9q5kHTTzbJzNlJYQ4Nh0A5IKe37BNPZ6hFe2Qdkryz31lykWj7bujlyFBLj3T5Ir04s6fg7LVOr4CKZ6dlZwCX3T3vCEOmVKynbDhpp0YVunS8oGYXvHi6+rRablEhYlXZSLXcJomo53U5rSm3QON0uW3CyBhN3jEnlS8dI2GuXBqck+ucQ96/4xo42mTdj2QtPjhr/XaiA5l6XaMg0gn79kMKCxBl7LYl1w1GcL1nIZxk0+ciIUO0CRf/rngej6ZDXNe/Y5afibsh7JSRb+KTm5kMs/UEsDBBQAAAgIAAAwIeyMhlltbQAAAHgAAAAJACQAbWV0YS5qc29uCgAgAAAAAAABABgAAIA+1d6xnQEAgD7V3rGdAQCAPtXesZ0Bq1YqSy0qzszPU7JSMNEz0jM01VFQSi9KLMgoBooYgjilmSkgdrSSUZpFqllaolmaWZJBcqKhoW6SUaJhorGhaaqxRbKBsUWqUixQfUllQapfYm4qRE9AYklGWmZeSmZeup57UWaKO8hopdhaAFBLAQItABQAAAgIAAAwIez4J+Y6aAIAABIFAAALACQAAAAAAAAAAAAAAAAAAABncmFwaDAuanNvbgoAIAAAAAAAAQAYAACAPtXesZ0BAIA+1d6xnQEAgD7V3rGdAVBLAQItABQAAAgIAAAwIeyMhlltbQAAAHgAAAAJACQAAAAAAAAAAAAAALUCAABtZXRhLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFQSwUGAAAAAAIAAgC4AAAAbQMAAAAA
+    dataString: UEsDBBQAAAgIAAAwIezWM0vgaAIAABQFAAALACQAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFlVMty2jAU/RVG68LYBAh01zqEdJHHlHay8UbI11iDLHn0CJAM/94rWY4d6o3lc5/n3Ct/EC5NA8wqvdG8eFQFkO8j4s/k26g3PsCJ7pXc8nfofF55YSvvRIPPb2q5Qjz1YUbVYDVnP+ReeOcEQSd5qXS9LvaQKWMNwiUVBtCklfXREqGPETnha7zyIWc8TW/96R1Pq2R0wSMDaUEPXNNkMlvhs0xjyPx24r9X01mMHM8CsFzN05DCSSZo3UDh+fSZ0ukiZkjnbS2JXKOPT86UENzERok9N0GIjDbGIU10KDhF4qG7dOIjKuD7ynoaw/DnsjRgoy6anu+4RgXbvOSnamWtqTm0vb1R4Xyl28UydNUmffzPPm7ZlVrVD13dNPE1bMXZ4Tc9M2rsQPchfDdoPUh0pOJAdwJeK5BPaqOVkwUarXY+1BmY3vWfn9SyCtihx9tWr0DX9Jp3Y+6G7DlcAvtTJni986bJrAW2QgXFw26Axtn8wobD5piYAlHfxV8Df+h+uGLRcM+1sWiKLKVvb6ec9q5kHTTzbJzNlJYQ4Nh0A5IKe37BNPZ6hFe2Qdkryz31lykWj7bujlyFBLj3T5Ir04s6fg7LVOr4CKZ6dlZwCX3T3vCEOmVKynbDhpp0YVunS8oGYXvHi6+rRablEhYlXZSLXcJomo53U5rSm3QON0uW3CyBhN3jEnlS8dI2GuXBqQ01kbho3U9mtNG0CeteaHrc8PdaDTTnslRbpgHk89cUBjRWwYtZrAuOCm3BWi7DwMlHToRiByjyz0R5oLo+WU3zPktOGv6mrEdykoW/Sk4u5PIPUEsDBBQAAAgIAAAwIeyMhlltbQAAAHgAAAAJACQAbWV0YS5qc29uCgAgAAAAAAABABgAAIA+1d6xnQEAgD7V3rGdAQCAPtXesZ0Bq1YqSy0qzszPU7JSMNEz0jM01VFQSi9KLMgoBooYgjilmSkgdrSSUZpFqllaolmaWZJBcqKhoW6SUaJhorGhaaqxRbKBsUWqUixQfUllQapfYm4qRE9AYklGWmZeSmZeup57UWaKO8hopdhaAFBLAQItABQAAAgIAAAwIezWM0vgaAIAABQFAAALACQAAAAAAAAAAAAAAAAAAABncmFwaDAuanNvbgoAIAAAAAAAAQAYAACAPtXesZ0BAIA+1d6xnQEAgD7V3rGdAVBLAQItABQAAAgIAAAwIeyMhlltbQAAAHgAAAAJACQAAAAAAAAAAAAAALUCAABtZXRhLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFQSwUGAAAAAAIAAgC4AAAAbQMAAAAA
     upgradeData: 
     file_cachedStartup: {fileID: 0}
     data_cachedStartup: 
@@ -6889,7 +6894,7 @@ MonoBehaviour:
   manualDebugFloorRoof: 0
   showSearchTree: 0
   unwalkableNodeDebugSize: 0.3
-  logPathResults: 1
+  logPathResults: 0
   maxNearestNodeDistance: 100
   scanOnStartup: 1
   fullGetNearestSearch: 0
@@ -6908,7 +6913,7 @@ MonoBehaviour:
   heuristic: 2
   heuristicScale: 1
   threadCount: 1
-  maxFrameTime: 1
+  maxFrameTime: 10
   batchGraphUpdates: 0
   graphUpdateBatchingInterval: 0.2
   euclideanEmbedding:
@@ -6916,7 +6921,7 @@ MonoBehaviour:
     seed: 0
     pivotPointRoot: {fileID: 0}
     spreadOutCount: 1
-  showGraphs: 1
+  showGraphs: 0
 --- !u!4 &1368684947
 Transform:
   m_ObjectHideFlags: 0
@@ -11482,6 +11487,11 @@ PrefabInstance:
       propertyPath: aiPath
       value: 
       objectReference: {fileID: 719761349582518667}
+    - target: {fileID: 958619637796460547, guid: 7211dfef9e85fe6429b402f0790cf6c2,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 958619637796460548, guid: 7211dfef9e85fe6429b402f0790cf6c2,
         type: 3}
       propertyPath: target

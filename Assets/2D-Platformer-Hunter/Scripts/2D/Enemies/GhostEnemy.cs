@@ -19,7 +19,7 @@ public class GhostEnemy : Enemy
     }
 
     public override void Behave(){
-        Debug.Log("ghost enemy moves");
+        // Debug.Log("ghost enemy moves");
     }
 
     public void Start() {

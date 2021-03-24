@@ -25,6 +25,11 @@ public class Enemy : MonoBehaviour, IDamagable
         Debug.Log("MOVES... will move..");
     }
 
+    public bool isGrounded() {
+        RaycastHit2D groundInfo = Physics2D.Raycast(transform.position, Vector2.down, 1);
+        return groundInfo.collider;
+    }
+
     public void Start() {
         rb2D = GetComponent<Rigidbody2D>();
     }
