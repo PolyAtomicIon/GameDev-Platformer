@@ -4,6 +4,8 @@ using System;
 
 public class Weapon : MonoBehaviour
 {
+    public bool equiped = true;
+
     public virtual void Attack(){
         Debug.Log("Attack");
     }
@@ -14,5 +16,13 @@ public class Weapon : MonoBehaviour
 
     public void Deactivate(){
         gameObject.SetActive(false);
+    }
+
+    public void setIsEquiped(bool value) {
+        equiped = value;
+    }
+
+    public bool isEquiped(){
+        return equiped;
     }
 }

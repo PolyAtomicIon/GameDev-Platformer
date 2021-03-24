@@ -26,7 +26,7 @@ public class PlayerCharacter : MonoBehaviour, IDamagable, IHasInventory, IHasEqu
 	public void TakeDamage (float damage){
         Debug.Log("Soo We will change Health variabe");
         
-        Time.timeScale = 0;
+        // Time.timeScale = 0;
     }
 
     private void Awake()

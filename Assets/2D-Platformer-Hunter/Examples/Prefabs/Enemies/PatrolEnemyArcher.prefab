@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1562600953441060864}
   m_Layer: 8
-  m_Name: EnemyRaycaster
+  m_Name: GroundRaycaster
   m_TagString: Untagged
   m_Icon: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -139,7 +139,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8734400487041769836}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -11.689, y: 1.32, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.653614, y: 1.3906088, z: 1}
   m_Children:
   - {fileID: 8705654097297790786}
@@ -225,8 +225,11 @@ MonoBehaviour:
   Weapon: {fileID: 5239812893412108229}
   speed: 100
   direction: 1
-  distance: 10
+  radius: 3
   groundDetection: {fileID: 1562600953441060864}
+  HitableTargets:
+    serializedVersion: 2
+    m_Bits: 1024
 --- !u!1001 &1271931017111162716
 PrefabInstance:
   m_ObjectHideFlags: 0

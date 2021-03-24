@@ -36,4 +36,12 @@ public class CombatInventory : MonoBehaviour
         weapons[curWeaponIndex].Attack();
     }
 
+    public void Equip(){
+        weapons[curWeaponIndex].setIsEquiped(true);      
+    }
+
+    public void Unequip(){
+        weapons[curWeaponIndex].setIsEquiped(false);
+    }
+
 }

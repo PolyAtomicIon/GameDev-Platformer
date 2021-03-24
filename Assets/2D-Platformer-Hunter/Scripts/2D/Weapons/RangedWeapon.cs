@@ -17,6 +17,9 @@ public class RangedWeapon : Weapon
 
     // overriding method Attack
     public override void Attack(){
+        if( !isEquiped() )
+            return;
+            
         if (timeBtwShots <= 0)
         {
             GameObject bullet_go = Instantiate(projectile, shotPoint.position, shotPoint.rotation);

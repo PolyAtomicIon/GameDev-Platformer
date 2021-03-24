@@ -14,6 +14,9 @@ public class GhostEnemyLocal : GhostEnemy
     }
 
     void CheckForPlayer() {
+        
+        bool isFound = false;
+
         Collider2D[] targets = Physics2D.OverlapCircleAll(transform.position, radius, HitableTargets);
         for (int i = 0; i < targets.Length; i++)
         {
@@ -21,34 +24,16 @@ public class GhostEnemyLocal : GhostEnemy
             
             if (targets[i].CompareTag("Player") ){
                 // Debug.Log("player found");
+                Weapon.Equip();
+                isFound = true;
                 ActivateAI();
             }
         }
+
+        if( !isFound ){
+            Weapon.Unequip();
+        }
     }
-
-    // void checkForPlayer() {
-    //     RaycastHit2D objectInfoForwards = Physics2D.Raycast(transform.position, Vector2.right * direction, distance);
-    //     RaycastHit2D objectInfoBackwards = Physics2D.Raycast(transform.position, Vector2.left * direction, distance);
-
-    //     if( objectInfoForwards.collider ){
-
-    //         pointForward = objectInfoForwards.point;
-
-    //         if( objectInfoForwards.collider.CompareTag("Player") ){
-    //             Debug.Log("player found");
-    //             ActivateAI();
-    //         }
-    //     }
-    //     else if( objectInfoBackwards.collider  ){
-
-    //         pointBackward = objectInfoBackwards.point;
-
-    //         if( objectInfoBackwards.collider.CompareTag("Player")  ){
-    //             Debug.Log("player found");
-    //             ActivateAI();
-    //         }
-    //     }
-    // }
 
     public override void Behave(){
         // Debug.Log("ghost enemy moves");
