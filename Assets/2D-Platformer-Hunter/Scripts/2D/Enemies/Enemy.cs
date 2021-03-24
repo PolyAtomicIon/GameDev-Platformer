@@ -12,6 +12,8 @@ public class Enemy : MonoBehaviour, IDamagable
     [HideInInspector]
     public Rigidbody2D rb2D;
 
+    public CombatInventory Weapon;
+
 	public virtual void TakeDamage (float damage){
         Debug.Log("damge taken");
 
@@ -31,6 +33,8 @@ public class Enemy : MonoBehaviour, IDamagable
     }
 
     public void Start() {
+        // Weapon = GetComponent<CombatInventory>();
+        Weapon.Initialize();
         rb2D = GetComponent<Rigidbody2D>();
     }
 

@@ -10,6 +10,7 @@ public class PatrolEnemyMelee : Enemy
     public float distance;
 
 
+
     public Transform groundDetection;
 
     public void changeDirection(){
@@ -34,6 +35,7 @@ public class PatrolEnemyMelee : Enemy
             // changeDirection(); 
             if( objectInfo.collider.CompareTag("Player") ){
                 Debug.Log("attack");
+                Weapon.Attack();
             }
             else{
                 changeDirection();

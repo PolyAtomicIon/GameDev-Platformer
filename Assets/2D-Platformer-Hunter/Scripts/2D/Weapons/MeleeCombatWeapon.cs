@@ -18,16 +18,12 @@ public class MeleeCombatWeapon : Weapon
         if (timeBtwShots <= 0)
         {
             Debug.Log("Melee attack");
-            Collider2D[] enemiesToDamage = Physics2D.OverlapCircleAll(attackPos.position, attackRange, whatIsEnemies);
-            for (int i = 0; i < enemiesToDamage.Length; i++)
+            Collider2D[] targets = Physics2D.OverlapCircleAll(attackPos.position, attackRange, whatIsEnemies);
+            for (int i = 0; i < targets.Length; i++)
             {
                 Debug.Log("attack");
-                Enemy enemy = enemiesToDamage[i].GetComponent<Enemy>();
-                if (enemy)
-                {
-                    enemiesToDamage[i].GetComponent<Enemy>().TakeDamage(damage);
-                }
-
+                IDamagable target = targets[i].GetComponent<IDamagable>();
+                target.TakeDamage(damage);
             }
         }
     }
