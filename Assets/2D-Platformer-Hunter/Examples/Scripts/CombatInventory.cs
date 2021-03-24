@@ -23,7 +23,7 @@ public class CombatInventory : MonoBehaviour
         weapons[curWeaponIndex].Activate();
     }
 
-    public void changeWeapon(){
+    public void ChangeWeapon(){
         weapons[curWeaponIndex].Deactivate();
 
         curWeaponIndex += 1;
@@ -34,14 +34,6 @@ public class CombatInventory : MonoBehaviour
 
     public void Attack(){
         weapons[curWeaponIndex].Attack();
-    }
-
-    public void Equip(){
-        weapons[curWeaponIndex].setIsEquiped(true);      
-    }
-
-    public void Unequip(){
-        weapons[curWeaponIndex].setIsEquiped(false);
     }
 
 }

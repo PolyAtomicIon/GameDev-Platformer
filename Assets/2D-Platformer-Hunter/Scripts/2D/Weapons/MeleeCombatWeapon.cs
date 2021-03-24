@@ -9,6 +9,7 @@ public class MeleeCombatWeapon : Weapon
     public float startTimeBtwShots;
 
     public Transform attackPos;
+    
     public LayerMask whatIsEnemies;
     public float attackRange;
     public int damage;

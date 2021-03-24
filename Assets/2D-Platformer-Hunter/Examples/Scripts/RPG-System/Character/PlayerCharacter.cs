@@ -50,7 +50,7 @@ public class PlayerCharacter : MonoBehaviour, IDamagable, IHasInventory, IHasEqu
     void Update()
     {
         if( Input.GetKeyDown(KeyCode.Q) ){
-            Weapon.changeWeapon();
+            Weapon.ChangeWeapon();
         }
 
         if( Input.GetKeyDown(KeyCode.R) ){

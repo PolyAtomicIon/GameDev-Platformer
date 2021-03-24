@@ -4,7 +4,9 @@ using System;
 
 public class Weapon : MonoBehaviour
 {
-    public bool equiped = true;
+
+    public float timeBtwShots;
+    public float startTimeBtwShots;
 
     public virtual void Attack(){
         Debug.Log("Attack");
@@ -17,12 +19,13 @@ public class Weapon : MonoBehaviour
     public void Deactivate(){
         gameObject.SetActive(false);
     }
-
-    public void setIsEquiped(bool value) {
-        equiped = value;
+    
+    public void ResetTimer(){
+        timeBtwShots = startTimeBtwShots;
     }
 
-    public bool isEquiped(){
-        return equiped;
+    public void TimerBetweenShots(){
+        timeBtwShots -= Time.deltaTime;
     }
-}
+
+ }

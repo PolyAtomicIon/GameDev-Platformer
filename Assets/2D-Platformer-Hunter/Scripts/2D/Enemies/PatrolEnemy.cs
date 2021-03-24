@@ -75,7 +75,6 @@ public class PatrolEnemy : Enemy
 
     }
 
-
     public override void Behave(){
         Vector3 newVelocity = new Vector3( (isAttacking^1) * direction * Time.fixedDeltaTime * speed, rb2D.velocity.y, 0 );
         rb2D.velocity = newVelocity;
@@ -93,11 +92,13 @@ public class PatrolEnemy : Enemy
 
         checkForGround();
 
-        if( Weapon ){
-            Weapon.Attack();
+        bool isPlayerInZone = CheckForPlayer();
+        if( isPlayerInZone ){
+            if( Weapon ){
+                Weapon.Attack();
+            }
         }
 
-        CheckForPlayer();
         CheckForWall();
     }
 

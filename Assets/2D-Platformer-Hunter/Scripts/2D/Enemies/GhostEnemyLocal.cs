@@ -35,10 +35,6 @@ public class GhostEnemyLocal : GhostEnemy
         }
     }
 
-    public override void Behave(){
-        // Debug.Log("ghost enemy moves");
-    }
-
     public void Start() {
         aiPath.canMove = false;
     }

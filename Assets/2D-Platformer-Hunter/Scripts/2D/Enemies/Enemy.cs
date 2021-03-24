@@ -15,6 +15,11 @@ public class Enemy : MonoBehaviour, IDamagable
 
     public CombatInventory Weapon;
 
+    public void AttackIfPlayerInZone(){
+        // check for player
+        // attack in case
+    }
+
 	public virtual void TakeDamage (float damage){
         Debug.Log("damge taken");
 
@@ -39,7 +44,6 @@ public class Enemy : MonoBehaviour, IDamagable
             Weapon.Initialize();
         rb2D = GetComponent<Rigidbody2D>();
     }
-
 
     public void FixedUpdate () {
         Behave();

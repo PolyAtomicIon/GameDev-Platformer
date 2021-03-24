@@ -31,9 +31,6 @@ public class GhostEnemy : Enemy
     public void Awake() {
         aiPath = GetComponent<AIPath>();
     }
-    public void FixedUpdate () {
-        Behave();
-    }
 
     private void Update() {
         changeDirection();
