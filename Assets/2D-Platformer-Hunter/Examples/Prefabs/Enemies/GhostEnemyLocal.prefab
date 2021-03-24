@@ -94,9 +94,9 @@ GameObject:
   - component: {fileID: 4781833675020192708}
   - component: {fileID: 4781833675020192707}
   - component: {fileID: 4781833675020192706}
-  - component: {fileID: 4781833675020192709}
   - component: {fileID: 4786809535839703002}
   - component: {fileID: 7707009163538619810}
+  - component: {fileID: 8911069770166115993}
   m_Layer: 8
   m_Name: GhostEnemyLocal
   m_TagString: Enemy
@@ -198,22 +198,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   version: 1
   target: {fileID: 0}
---- !u!58 &4781833675020192709
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4781833675020192705}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.054287944, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.6212032
 --- !u!114 &4786809535839703002
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -227,9 +211,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb2D: {fileID: 0}
-  Weapon: {fileID: 0}
+  Weapon: {fileID: 7707009163538619810}
+  aiPath: {fileID: 0}
   gfx: {fileID: 4781833673342691509}
-  distance: 1
+  direction: 1
+  HitableTargets:
+    serializedVersion: 2
+    m_Bits: 1024
+  radius: 6
 --- !u!114 &7707009163538619810
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -244,6 +233,32 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weapons:
   - {fileID: 8201979395472766754}
+--- !u!61 &8911069770166115993
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4781833675020192705}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.0000013113022, y: -0.035078228}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.5357226, y: 0.7739402}
+  m_EdgeRadius: 0
 --- !u!1 &5449750575851800155
 GameObject:
   m_ObjectHideFlags: 0
@@ -401,6 +416,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: EnemyBowWeapon
+      objectReference: {fileID: 0}
+    - target: {fileID: 868573399196734645, guid: 2a8c1665142c8b44c83dafb43bbf103f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 868573400496749296, guid: 2a8c1665142c8b44c83dafb43bbf103f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 868573400662346142, guid: 2a8c1665142c8b44c83dafb43bbf103f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 5490281867693565825, guid: 2a8c1665142c8b44c83dafb43bbf103f,
         type: 3}

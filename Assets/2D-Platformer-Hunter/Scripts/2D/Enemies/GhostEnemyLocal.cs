@@ -17,10 +17,10 @@ public class GhostEnemyLocal : GhostEnemy
         Collider2D[] targets = Physics2D.OverlapCircleAll(transform.position, radius, HitableTargets);
         for (int i = 0; i < targets.Length; i++)
         {
-            Debug.Log("SOMETHING found");
+            // Debug.Log("SOMETHING found");
             
             if (targets[i].CompareTag("Player") ){
-                Debug.Log("player found");
+                // Debug.Log("player found");
                 ActivateAI();
             }
         }

@@ -8,7 +8,7 @@ public class Projectile : MonoBehaviour {
     public float lifeTime;
     public float distance;
     public int damage;
-    public LayerMask whatIsSolid;
+    public List<string> TargetsTags;
 
     public GameObject destroyEffect;
 
@@ -41,8 +41,7 @@ public class Projectile : MonoBehaviour {
     }
 
     private void OnCollisionEnter2D(Collision2D collision) {
-        // Layer : 9 => Environment
-        if( collision.collider.gameObject.layer != 9 ){   
+        if( TargetsTags.Contains(collision.collider.gameObject.tag) ){   
             Debug.Log("hitted a target");
             collision.collider.GetComponent<IDamagable>().TakeDamage(damage);
         }

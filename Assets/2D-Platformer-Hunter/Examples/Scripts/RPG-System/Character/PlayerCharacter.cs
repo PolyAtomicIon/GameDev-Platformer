@@ -5,6 +5,7 @@ using UnityEngine;
 using DYP;
 using UnityEngine.UI; // Required when Using UI elements.
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class PlayerCharacter : MonoBehaviour, IDamagable, IHasInventory, IHasEquipment
 {
@@ -24,6 +25,8 @@ public class PlayerCharacter : MonoBehaviour, IDamagable, IHasInventory, IHasEqu
     TextMeshProUGUI HealthTextLabel ;
 	public void TakeDamage (float damage){
         Debug.Log("Soo We will change Health variabe");
+        
+        Time.timeScale = 0;
     }
 
     private void Awake()
@@ -48,6 +51,11 @@ public class PlayerCharacter : MonoBehaviour, IDamagable, IHasInventory, IHasEqu
     {
         if( Input.GetKeyDown(KeyCode.Q) ){
             Weapon.changeWeapon();
+        }
+
+        if( Input.GetKeyDown(KeyCode.R) ){
+            Time.timeScale = 1;
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
 
         if( Input.GetMouseButtonDown(0) ){

@@ -97,7 +97,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   offset: 0
-  projectile: {fileID: 4122184516997705474, guid: fe4eb5b8724b2c243b97a9572ba63658,
+  projectile: {fileID: 4075874817375458081, guid: 3d5ce2b5b2bcba04a86d79b6359f697e,
     type: 3}
   shotEffect: {fileID: 0}
   shotPoint: {fileID: 868573400496749303}
