@@ -5,6 +5,7 @@ using UnityEngine;
 using UnityEngine.UI; // Required when Using UI elements.
 using TMPro;
 
+[RequireComponent(typeof(CombatInventory))]
 public class Enemy : MonoBehaviour, IDamagable
 { 
 	public float Health { get; set; }    

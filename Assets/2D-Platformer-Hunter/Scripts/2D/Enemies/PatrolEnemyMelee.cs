@@ -34,7 +34,8 @@ public class PatrolEnemyMelee : Enemy
             // Debug.Log("object found");
             if( objectInfo.collider.CompareTag("Player") ){
                 // Debug.Log("attack");
-                Weapon.Attack();
+                if( Weapon )
+                    Weapon.Attack();
             }
             else{
                 changeDirection();

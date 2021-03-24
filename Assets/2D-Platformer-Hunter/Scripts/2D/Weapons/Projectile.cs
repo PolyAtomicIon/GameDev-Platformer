@@ -41,15 +41,12 @@ public class Projectile : MonoBehaviour {
     }
 
     private void OnCollisionEnter2D(Collision2D collision) {
-        if (collision.collider.CompareTag("Enemy")) {
-            Debug.Log("something in enemy");
-            collision.collider.GetComponent<IDamagable>().TakeDamage(damage);
-            DestroyProjectile();
-        }
         // Layer : 9 => Environment
-        else if( collision.collider.gameObject.layer == 9 ){    
-            DestroyProjectile();
+        if( collision.collider.gameObject.layer != 9 ){   
+            Debug.Log("hitted a target");
+            collision.collider.GetComponent<IDamagable>().TakeDamage(damage);
         }
+        DestroyProjectile();
     }
 
     void DestroyProjectile() {
