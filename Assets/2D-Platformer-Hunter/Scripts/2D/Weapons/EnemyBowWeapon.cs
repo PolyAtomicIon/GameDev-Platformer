@@ -12,6 +12,7 @@ public class EnemyBowWeapon : Weapon
     public Transform shotPoint;
     public Transform playerPosition;
     public Animator camAnim;
+    public Vector3 positionError = new Vector3( 0f, 0f, 0f );
 
     private float timeBtwShots;
     public float startTimeBtwShots;
@@ -29,7 +30,7 @@ public class EnemyBowWeapon : Weapon
     }
 
     void followPlayer(){
-        Vector3 difference = new Vector3( playerPosition.position.x, playerPosition.position.y, 0) - transform.position;
+        Vector3 difference = playerPosition.position + positionError - transform.position;
         float rotZ = Mathf.Atan2(difference.y, difference.x) * Mathf.Rad2Deg;
         transform.rotation = Quaternion.Euler(0f, 0f, rotZ + offset);
     }
