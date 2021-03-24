@@ -23,7 +23,6 @@ public class PatrolEnemyMelee : Enemy
     void checkForGround(){
         RaycastHit2D groundInfo = Physics2D.Raycast(groundDetection.position, Vector2.down, 1);
         if( !groundInfo.collider ){
-            Debug.Log("move true");
             changeDirection(); 
         }
     }

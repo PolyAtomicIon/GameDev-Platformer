@@ -1,5 +1,35 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1652739938816736918
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2976925896708493167}
+  m_Layer: 10
+  m_Name: Attack Pos
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2976925896708493167
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1652739938816736918}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0, y: 0.05, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4613198165636216457}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &4613198165636216456
 GameObject:
   m_ObjectHideFlags: 0
@@ -11,7 +41,7 @@ GameObject:
   - component: {fileID: 4613198165636216457}
   - component: {fileID: 4613198165636216471}
   - component: {fileID: 4932875695685637410}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: SwordWeapon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30,6 +60,7 @@ Transform:
   m_LocalScale: {x: 1.2106084, y: 0.20041423, z: 1}
   m_Children:
   - {fileID: 4613198165860314016}
+  - {fileID: 2976925896708493167}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
@@ -95,7 +126,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10292df10b4ca934e90624bb3bc69ed5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startTimeBtwShots: 0
+  startTimeBtwShots: 0.15
+  attackPos: {fileID: 2976925896708493167}
+  whatIsEnemies:
+    serializedVersion: 2
+    m_Bits: 256
+  attackRange: 1
+  damage: 10
 --- !u!1 &4613198165860314019
 GameObject:
   m_ObjectHideFlags: 0
@@ -106,7 +143,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4613198165860314016}
   - component: {fileID: 4613198165860314017}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: TaleOfWeapon
   m_TagString: Untagged
   m_Icon: {fileID: 0}

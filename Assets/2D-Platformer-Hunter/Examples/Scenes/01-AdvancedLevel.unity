@@ -11502,6 +11502,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: GhostEnemy
       objectReference: {fileID: 0}
+    - target: {fileID: 958619637796460551, guid: 7211dfef9e85fe6429b402f0790cf6c2,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 958619637796460602, guid: 7211dfef9e85fe6429b402f0790cf6c2,
         type: 3}
       propertyPath: m_RootOrder
@@ -11643,6 +11648,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 4932875695685637410, guid: 4f175728fcd7ac7418c71d1e63a9bd76,
+        type: 3}
+      propertyPath: startTimeBtwShots
+      value: 0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 4932875695685637410, guid: 4f175728fcd7ac7418c71d1e63a9bd76,
+        type: 3}
+      propertyPath: whatIsEnemies.m_Bits
+      value: 256
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f175728fcd7ac7418c71d1e63a9bd76, type: 3}
