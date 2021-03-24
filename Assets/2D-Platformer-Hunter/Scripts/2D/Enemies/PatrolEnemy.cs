@@ -40,6 +40,10 @@ public class PatrolEnemy : Enemy
         }
     }
 
+    void checkForDirectionOfPlayer(){
+        // if( transform.position  )
+    }
+
     void CheckForPlayer() {
 
         bool isFound = false;
@@ -51,6 +55,9 @@ public class PatrolEnemy : Enemy
             
             if (targets[i].CompareTag("Player") ){
                 // Debug.Log("player found");
+
+                checkForDirectionOfPlayer();
+
                 Weapon.Equip();
                 isFound = true;
                 isAttacking = 1;
