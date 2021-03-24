@@ -34,7 +34,8 @@ public class Enemy : MonoBehaviour, IDamagable
 
     public void Start() {
         // Weapon = GetComponent<CombatInventory>();
-        Weapon.Initialize();
+        if( Weapon )
+            Weapon.Initialize();
         rb2D = GetComponent<Rigidbody2D>();
     }
 

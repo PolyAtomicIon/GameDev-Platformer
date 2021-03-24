@@ -31,10 +31,9 @@ public class PatrolEnemyMelee : Enemy
     void checkForOjectForward() {
         RaycastHit2D objectInfo = Physics2D.Raycast(groundDetection.position, Vector2.right * direction, 1);
         if( objectInfo.collider ){
-            Debug.Log("object found");
-            // changeDirection(); 
+            // Debug.Log("object found");
             if( objectInfo.collider.CompareTag("Player") ){
-                Debug.Log("attack");
+                // Debug.Log("attack");
                 Weapon.Attack();
             }
             else{
