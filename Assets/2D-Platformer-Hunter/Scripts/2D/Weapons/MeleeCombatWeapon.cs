@@ -5,33 +5,20 @@ using System;
 [System.Serializable]
 public class MeleeCombatWeapon : Weapon
 {
-    private float timeBtwShots;
-    public float startTimeBtwShots;
 
-    public Transform attackPos;
-    
     public LayerMask whatIsEnemies;
     public float attackRange;
     public int damage;
 
-    public override void Attack()
-    {
-        if (timeBtwShots <= 0)
+    public override void HandlePhysicsOfAttack(){
+        Debug.Log("Melee attack");
+        Collider2D[] targets = Physics2D.OverlapCircleAll(attackPos.position, attackRange, whatIsEnemies);
+        for (int i = 0; i < targets.Length; i++)
         {
-            Debug.Log("Melee attack");
-            Collider2D[] targets = Physics2D.OverlapCircleAll(attackPos.position, attackRange, whatIsEnemies);
-            for (int i = 0; i < targets.Length; i++)
-            {
-                Debug.Log("attack");
-                IDamagable target = targets[i].GetComponent<IDamagable>();
-                target.TakeDamage(damage);
-            }
+            Debug.Log("attack");
+            IDamagable target = targets[i].GetComponent<IDamagable>();
+            target.TakeDamage(damage);
         }
-    }
-
-    private void Update()
-    {
-        timeBtwShots -= Time.deltaTime;
     }
 
     void OnDrawGizmosSelected()

@@ -8,22 +8,12 @@ public class RangedWeapon : Weapon
     public float offset;
     public GameObject projectile;
     public GameObject shotEffect;
-    public Transform shotPoint;
 
-    void ShootBullet(){
-        GameObject bullet_go = Instantiate(projectile, shotPoint.position, shotPoint.rotation);
+    public override void HandlePhysicsOfAttack(){
+        GameObject bullet_go = Instantiate(projectile, attackPos.position, attackPos.rotation);
         Projectile bullet = bullet_go.GetComponent<Projectile>();
         bullet.Move(transform.right);
         Debug.Log("Shooted");
-    }
-
-    // overriding method Attack
-    public override void Attack(){
-        if (timeBtwShots <= 0)
-        {
-            ShootBullet();
-            ResetTimer();
-        }
     }
 
     // ex: Mouse position, player's position

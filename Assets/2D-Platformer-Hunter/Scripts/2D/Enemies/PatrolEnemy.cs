@@ -22,7 +22,7 @@ public class PatrolEnemy : Enemy
             transform.eulerAngles = new Vector3( 0, -180, 0 );
     }
 
-    void checkForGround(){
+    void CheckForGround(){
         if( !isGrounded() )
             return;
         RaycastHit2D groundInfo = Physics2D.Raycast(groundDetection.position, Vector2.down, 1);
@@ -90,7 +90,7 @@ public class PatrolEnemy : Enemy
 
     private void Update() {
 
-        checkForGround();
+        CheckForGround();
 
         bool isPlayerInZone = CheckForPlayer();
         if( isPlayerInZone ){
