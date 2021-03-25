@@ -67,7 +67,7 @@ public class Enemy : MonoBehaviour, IDamagable
     }
 
     public void SearchPlayer() {
-        Collider2D[] targets = Physics2D.OverlapCircleAll(transform.position, 2*radius, HitableTargets);
+        Collider2D[] targets = Physics2D.OverlapCircleAll(transform.position, radius, HitableTargets);
         for (int i = 0; i < targets.Length; i++){
             if (targets[i].CompareTag("Player") ){
                 player = targets[i].gameObject;
@@ -104,7 +104,7 @@ public class Enemy : MonoBehaviour, IDamagable
     public void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.white;
-        Gizmos.DrawWireSphere(transform.position, 2*radius);
+        Gizmos.DrawWireSphere(transform.position, radius);
     }
 
 }

@@ -21,10 +21,4 @@ public class GhostEnemyLocal : GhostEnemy
         }
     }
 
-    void OnDrawGizmosSelected()
-    {
-        Gizmos.color = Color.white;
-        Gizmos.DrawWireSphere(transform.position, radius);
-    }
-
 }
