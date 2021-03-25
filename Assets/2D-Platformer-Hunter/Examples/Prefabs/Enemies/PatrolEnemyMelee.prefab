@@ -222,14 +222,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb2D: {fileID: 0}
-  Weapon: {fileID: 4759253141299530523}
-  speed: 100
-  direction: 1
   radius: 1
-  groundDetection: {fileID: 2239613777761772766}
+  player: {fileID: 0}
+  Weapon: {fileID: 4759253141299530523}
   HitableTargets:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 1024
+  speed: 100
+  direction: 1
+  groundDetection: {fileID: 2239613777761772766}
+  EnvironmentLayer:
+    serializedVersion: 2
+    m_Bits: 512
+  height: 1.4
 --- !u!1001 &5043484246401212988
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -30,7 +30,7 @@ public class Projectile : MonoBehaviour {
         transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
     }
 
-    // called from Weapon.cs
+    // called from RangedWeapon.cs
     public void Move(Vector3 direction) {
         rb.velocity = direction * speed;
     }

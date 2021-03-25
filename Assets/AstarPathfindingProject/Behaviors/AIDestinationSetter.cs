@@ -27,6 +27,11 @@ namespace Pathfinding {
 			if (ai != null) ai.onSearchPath += Update;
 		}
 
+		// Added by me
+		void Start(){
+        	target = GameObject.FindGameObjectsWithTag("Player")[0].transform;
+		}
+
 		void OnDisable () {
 			if (ai != null) ai.onSearchPath -= Update;
 		}

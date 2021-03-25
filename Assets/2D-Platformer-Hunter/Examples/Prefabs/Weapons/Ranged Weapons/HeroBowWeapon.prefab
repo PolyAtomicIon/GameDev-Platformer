@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 319833660380761574}
   m_Layer: 8
-  m_Name: ShotPoint
+  m_Name: AttackPos
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -121,9 +121,9 @@ GameObject:
   m_Component:
   - component: {fileID: 319833662486668197}
   - component: {fileID: 319833662486668219}
-  - component: {fileID: 8545089914381849945}
+  - component: {fileID: 1745384703945273066}
   m_Layer: 8
-  m_Name: BowWeapon
+  m_Name: HeroBowWeapon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -195,7 +195,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &8545089914381849945
+--- !u!114 &1745384703945273066
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -204,13 +204,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 319833662486668196}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e088c7e11c08a7c48891d90c6dd1ad19, type: 3}
+  m_Script: {fileID: 11500000, guid: 9db65136925b18347bedad72dd28830c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timeBtwShots: 0
+  startTimeBtwShots: 0.35
+  attackPos: {fileID: 319833660380761574}
   offset: 0
   projectile: {fileID: 4209057260513843309, guid: ccf91cbb58745ef4e87c15bc28fbcfe3,
     type: 3}
   shotEffect: {fileID: 0}
-  shotPoint: {fileID: 319833660380761574}
-  camAnim: {fileID: 0}
-  startTimeBtwShots: 0.35

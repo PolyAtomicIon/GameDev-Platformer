@@ -4,10 +4,8 @@ using System;
 
 public class Weapon : MonoBehaviour
 {
-
     public float timeBtwShots;
     public float startTimeBtwShots;
-
     public Transform attackPos;
 
     public void Activate(){
@@ -37,6 +35,11 @@ public class Weapon : MonoBehaviour
         {
             HandlePhysicsOfAttack();
             ResetTimer();
+            // Activate SOUND
+            // Activate VFX
+            // Activate Animation
+            // Ammo modification: decrease number of bullets -> RangedWeopon
+            // Combo hits -> MeleeWeapon
         }
     }
 

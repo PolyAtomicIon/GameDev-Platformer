@@ -9,6 +9,9 @@ public class RangedWeapon : Weapon
     public GameObject projectile;
     public GameObject shotEffect;
 
+    // Add ammo to the weapon
+    // chang values during Attack ...
+
     public override void HandlePhysicsOfAttack(){
         GameObject bullet_go = Instantiate(projectile, attackPos.position, attackPos.rotation);
         Projectile bullet = bullet_go.GetComponent<Projectile>();

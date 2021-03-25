@@ -7,105 +7,77 @@ public class PatrolEnemy : Enemy
 
     public float speed = 100f;
     public int direction = 1;
-    public float radius = 1;
-
     public Transform groundDetection;
-    public LayerMask HitableTargets;
+    public LayerMask EnvironmentLayer;
 
-    private int isAttacking = 0;
+    private float height;
 
-    public void changeDirection(){
+    public void ChangeDirection(){
         direction *= -1;
         if( direction == 1 )
             transform.eulerAngles = new Vector3( 0, 0, 0 );
-        if( direction == -1 )
+        else if( direction == -1 )
             transform.eulerAngles = new Vector3( 0, -180, 0 );
     }
 
-    void CheckForGround(){
-        if( !isGrounded() )
-            return;
+    bool IsGroundDetected(){        
         RaycastHit2D groundInfo = Physics2D.Raycast(groundDetection.position, Vector2.down, 1);
-        if( !groundInfo.collider ){
-            changeDirection(); 
-        }
+        if( !groundInfo.collider )
+            return true;
+        else
+            return false;
     }
 
-    void CheckForWall(){
-        if( !isGrounded() )
+    bool IsWalldDetected(){
+        Vector2 center = new Vector2(transform.position.x, transform.position.y);
+        Vector2 topLeftCorner = new Vector2( center.x-radius, center.y+height/2 );
+        Vector2 bottomRightCorner = new Vector2( center.x+radius, center.y-height/2 );
+
+        Collider2D wallInfo = Physics2D.OverlapArea(topLeftCorner, bottomRightCorner, EnvironmentLayer);
+        if( wallInfo )
+            return true;
+        else
+            return false;
+    }
+
+    void CheckBorders(){
+        if( !IsGrounded() )
             return;
-        RaycastHit2D wallInfo = Physics2D.Raycast(transform.position, Vector2.right*direction, 3);
-        if( !wallInfo.collider ){
-            changeDirection(); 
+
+        bool groundDetected = IsGroundDetected();
+        bool wallDetected = IsWalldDetected();
+        if( groundDetected || wallDetected ){
+            ChangeDirection();
         }
-    }
-
-    void checkForDirectionOfPlayer(){
-        // if( transform.position  )
-    }
-
-    void CheckForPlayer() {
-
-        bool isFound = false;
-
-        Collider2D[] targets = Physics2D.OverlapCircleAll(transform.position, 2*radius, HitableTargets);
-        for (int i = 0; i < targets.Length; i++)
-        {
-            // Debug.Log("SOMETHING found");
-            
-            if (targets[i].CompareTag("Player") ){
-                // Debug.Log("player found");
-
-                checkForDirectionOfPlayer();
-
-                Weapon.Equip();
-                isFound = true;
-                isAttacking = 1;
-                break;
-            }
-            else{
-                changeDirection();
-            }
-        }
-
-        if( !isFound ){
-            Weapon.Unequip();
-            isAttacking = 0;
-        }
-
-    }
-
-    public override void Behave(){
-        Vector3 newVelocity = new Vector3( (isAttacking^1) * direction * Time.fixedDeltaTime * speed, rb2D.velocity.y, 0 );
-        rb2D.velocity = newVelocity;
     }
 
     public void Start() {
-        rb2D = GetComponent<Rigidbody2D>();
+        base.Start();
+        height = transform.localScale.y;
     }
 
-    public void FixedUpdate () {
-        Behave();
-    }
-
-    private void Update() {
-
-        CheckForGround();
-
-        bool isPlayerInZone = CheckForPlayer();
-        if( isPlayerInZone ){
-            if( Weapon ){
-                Weapon.Attack();
-            }
+    public override void Behave(){
+        float speedByXAxis = direction * Time.fixedDeltaTime * speed;
+       
+        // if enemy attacks Hero
+        if( IsPlayerInFieldOfVision() ){
+            speedByXAxis = 0;
         }
 
-        CheckForWall();
+        Vector3 newVelocity = new Vector3( speedByXAxis, rb2D.velocity.y, 0 );
+        rb2D.velocity = newVelocity;
     }
-
-    void OnDrawGizmosSelected()
+    
+    public void FixedUpdate() {
+        base.FixedUpdate();
+        CheckBorders();
+    }
+    
+    public void OnDrawGizmosSelected()
     {
-        Gizmos.color = Color.white;
-        Gizmos.DrawWireSphere(transform.position, 2*radius);
+        base.OnDrawGizmosSelected();
+        Gizmos.color = Color.green;
+        Gizmos.DrawWireCube(transform.position, new Vector3(radius*2, height, 1));
     }
 
 }

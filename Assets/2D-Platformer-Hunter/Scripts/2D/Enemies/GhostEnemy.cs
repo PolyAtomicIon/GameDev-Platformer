@@ -10,7 +10,7 @@ public class GhostEnemy : Enemy
     public Transform gfx;
     public int direction = 1;
 
-    public void changeDirection(){
+    public void ChangeDirection(){
         if( !aiPath.canMove )
             return;
 
@@ -33,7 +33,8 @@ public class GhostEnemy : Enemy
     }
 
     private void Update() {
-        changeDirection();
+        base.Update();
+        ChangeDirection();
     }
 
 }

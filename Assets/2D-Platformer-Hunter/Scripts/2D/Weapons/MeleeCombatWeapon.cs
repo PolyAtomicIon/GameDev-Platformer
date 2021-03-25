@@ -10,6 +10,8 @@ public class MeleeCombatWeapon : Weapon
     public float attackRange;
     public int damage;
 
+    // Add combo attack
+
     public override void HandlePhysicsOfAttack(){
         Debug.Log("Melee attack");
         Collider2D[] targets = Physics2D.OverlapCircleAll(attackPos.position, attackRange, whatIsEnemies);
