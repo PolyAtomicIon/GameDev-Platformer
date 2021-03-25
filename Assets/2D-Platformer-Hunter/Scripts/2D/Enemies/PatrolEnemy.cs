@@ -6,13 +6,12 @@ public class PatrolEnemy : Enemy
 { 
 
     public float speed = 100f;
-    public int direction = 1;
     public Transform groundDetection;
     public LayerMask EnvironmentLayer;
 
     private float height;
 
-    public void ChangeDirection(){
+    public override void ChangeDirection(){
         direction *= -1;
         if( direction == 1 )
             transform.eulerAngles = new Vector3( 0, 0, 0 );

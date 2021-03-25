@@ -8,9 +8,8 @@ public class GhostEnemy : Enemy
 
     public AIPath aiPath;
     public Transform gfx;
-    public int direction = 1;
 
-    public void ChangeDirection(){
+    public override void ChangeDirection(){
         if( !aiPath.canMove )
             return;
 

@@ -16,6 +16,7 @@ public class Enemy : MonoBehaviour, IDamagable
     public GameObject player;
     public CombatInventory Weapon;
     public LayerMask HitableTargets;
+    public int direction = 1;
 
     public bool IsPlayerInFieldOfVision() {
         if( player )
@@ -23,9 +24,25 @@ public class Enemy : MonoBehaviour, IDamagable
         return false;
     }
 
+    public bool isPlayerOnRightSide() {
+        return ( player.transform.position.x > transform.position.x );
+    }
+
+    public bool isPlayerOnLeftSide() {
+        return ( player.transform.position.x < transform.position.x );
+    }
+
+    public void LookStraightToPlayer(){
+        if( isPlayerOnLeftSide() && direction == 1 || isPlayerOnRightSide() && direction == -1 ){
+            ChangeDirection();
+        }
+    }
+
     public void AttackIfPlayerDetected(){
         if( !IsPlayerInFieldOfVision() )
             return;
+
+        LookStraightToPlayer();
 
         if( Weapon ){
             Weapon.Attack();
@@ -69,6 +86,10 @@ public class Enemy : MonoBehaviour, IDamagable
 
     public virtual void Behave(){
         Debug.Log("MOVES... will move..");
+    }
+
+    public virtual void ChangeDirection(){
+        Debug.Log("Changes direction");
     }
 
     public void Update(){
