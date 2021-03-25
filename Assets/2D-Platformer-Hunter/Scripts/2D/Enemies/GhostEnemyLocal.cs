@@ -10,13 +10,12 @@ public class GhostEnemyLocal : GhostEnemy
     }
 
     public void Start() {
+        base.Start();
         aiPath.canMove = false;
     }
 
-    public void FixedUpdate () {
-    }
-
     public void Update() {
+        base.Update();
         if( IsPlayerInFieldOfVision() ){
             ActivateAI();
         }

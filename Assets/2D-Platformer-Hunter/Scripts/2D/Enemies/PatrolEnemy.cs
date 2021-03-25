@@ -22,7 +22,7 @@ public class PatrolEnemy : Enemy
 
     bool IsGroundDetected(){        
         RaycastHit2D groundInfo = Physics2D.Raycast(groundDetection.position, Vector2.down, 1);
-        if( !groundInfo.collider )
+        if( groundInfo.collider )
             return true;
         else
             return false;
@@ -30,8 +30,15 @@ public class PatrolEnemy : Enemy
 
     bool IsWalldDetected(){
         Vector2 center = new Vector2(transform.position.x, transform.position.y);
-        Vector2 topLeftCorner = new Vector2( center.x-radius, center.y+height/2 );
-        Vector2 bottomRightCorner = new Vector2( center.x+radius, center.y-height/2 );
+        Vector2 topLeftCorner = new Vector2( center.x-radius, center.y+height/2.2f );
+        Vector2 bottomRightCorner = new Vector2( center.x+radius, center.y-height/2.2f );
+
+        if( direction == 1 ){
+            topLeftCorner.x = center.x;
+        } 
+        else{ 
+            bottomRightCorner.x = center.x;
+        }
 
         Collider2D wallInfo = Physics2D.OverlapArea(topLeftCorner, bottomRightCorner, EnvironmentLayer);
         if( wallInfo )
@@ -46,7 +53,7 @@ public class PatrolEnemy : Enemy
 
         bool groundDetected = IsGroundDetected();
         bool wallDetected = IsWalldDetected();
-        if( groundDetected || wallDetected ){
+        if( !groundDetected || wallDetected ){
             ChangeDirection();
         }
     }
@@ -59,15 +66,19 @@ public class PatrolEnemy : Enemy
     public override void Behave(){
         float speedByXAxis = direction * Time.fixedDeltaTime * speed;
        
-        // if enemy attacks Hero
-        if( IsPlayerInFieldOfVision() ){
-            speedByXAxis = 0;
-        }
+        // // if enemy attacks Hero
+        // if( IsPlayerInFieldOfVision() ){
+        //     speedByXAxis = 0;
+        // }
 
         Vector3 newVelocity = new Vector3( speedByXAxis, rb2D.velocity.y, 0 );
         rb2D.velocity = newVelocity;
     }
     
+    public void Update(){
+        base.Update();
+    }
+
     public void FixedUpdate() {
         base.FixedUpdate();
         CheckBorders();
@@ -77,7 +88,7 @@ public class PatrolEnemy : Enemy
     {
         base.OnDrawGizmosSelected();
         Gizmos.color = Color.green;
-        Gizmos.DrawWireCube(transform.position, new Vector3(radius*2, height, 1));
+        Gizmos.DrawWireCube(transform.position + new Vector3(radius*direction, 0, 0), new Vector3(radius, height, 1));
     }
 
 }

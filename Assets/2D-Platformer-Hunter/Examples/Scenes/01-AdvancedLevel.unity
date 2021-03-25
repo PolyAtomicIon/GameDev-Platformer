@@ -1358,6 +1358,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: GhostEnemyLocal
       objectReference: {fileID: 0}
+    - target: {fileID: 4781833675020192705, guid: c4ecac4714fe7fc4199bbdb1e2f03fb3,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4781833675020192764, guid: c4ecac4714fe7fc4199bbdb1e2f03fb3,
         type: 3}
       propertyPath: m_RootOrder
@@ -1366,7 +1371,7 @@ PrefabInstance:
     - target: {fileID: 4781833675020192764, guid: c4ecac4714fe7fc4199bbdb1e2f03fb3,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -35.4
+      value: -23.1
       objectReference: {fileID: 0}
     - target: {fileID: 4781833675020192764, guid: c4ecac4714fe7fc4199bbdb1e2f03fb3,
         type: 3}
@@ -5687,6 +5692,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 937303286}
     m_Modifications:
+    - target: {fileID: 111207337960011550, guid: 5b2562f2d2181d84e9dde2d88afce3af,
+        type: 3}
+      propertyPath: damage
+      value: 658
+      objectReference: {fileID: 0}
     - target: {fileID: 8326345800403291535, guid: 5b2562f2d2181d84e9dde2d88afce3af,
         type: 3}
       propertyPath: m_RootOrder

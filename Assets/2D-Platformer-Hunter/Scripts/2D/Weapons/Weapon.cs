@@ -42,5 +42,11 @@ public class Weapon : MonoBehaviour
             // Combo hits -> MeleeWeapon
         }
     }
+    
+    public void Update()
+    {   
+        TimerBetweenShots();
+    }
+
 
  }

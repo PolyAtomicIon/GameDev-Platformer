@@ -32,8 +32,8 @@ public class RangedWeapon : Weapon
 
     public void Update()
     {   
+        base.Update();
         SetWeaponAngle(GetPositionOfTarget());
-        TimerBetweenShots();
     }
 
 }

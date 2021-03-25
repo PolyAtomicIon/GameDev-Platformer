@@ -27,9 +27,9 @@ public class Enemy : MonoBehaviour, IDamagable
         if( !IsPlayerInFieldOfVision() )
             return;
 
-        if( Weapon )
+        if( Weapon ){
             Weapon.Attack();
-
+        }
         // Activate SOUND
         // Activate VFX
         // Activate Animation
