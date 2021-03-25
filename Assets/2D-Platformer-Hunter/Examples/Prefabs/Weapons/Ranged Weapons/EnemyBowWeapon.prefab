@@ -104,7 +104,6 @@ MonoBehaviour:
   shotPoint: {fileID: 7599398602470995549}
   playerPosition: {fileID: 0}
   camAnim: {fileID: 0}
-  positionError: {x: -1.68, y: 0.5, z: 0}
   startTimeBtwShots: 0.35
 --- !u!1 &7599398602301048116
 GameObject:

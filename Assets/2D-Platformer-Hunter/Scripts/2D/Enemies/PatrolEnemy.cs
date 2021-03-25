@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PatrolEnemy : Enemy
 { 
+    public Animator animator;
 
     public float speed = 100f;
     public int direction = 1;
@@ -90,6 +91,8 @@ public class PatrolEnemy : Enemy
     }
 
     private void Update() {
+
+        animator.SetFloat("Speed", speed);
 
         checkForGround();
 
