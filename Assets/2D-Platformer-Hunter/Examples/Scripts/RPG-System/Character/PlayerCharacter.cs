@@ -113,4 +113,9 @@ public class PlayerCharacter : MonoBehaviour, IDamagable, IHasInventory, IHasEqu
     {
         throw new NotImplementedException();
     }
+    void OnTriggerEnter2D(Collider2D other) {
+        if (other.tag == "spike"){
+            Debug.Log("dead");
+        }
+    }
 }
