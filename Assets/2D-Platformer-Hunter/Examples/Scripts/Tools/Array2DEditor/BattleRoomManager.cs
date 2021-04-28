@@ -48,6 +48,12 @@ namespace Array2DEditor
         }
 
         void InstantiatePrefab(int x, int y, string key){
+
+            if( key == "" ){
+                int index = Random.Range(2, prefabs.Count);
+                key = prefabs[index].key;
+            }
+
             GameObject prefab = getRandomPrefabByKey( key );
             if( prefab == null )
                 return;
@@ -74,21 +80,14 @@ namespace Array2DEditor
                     for (var x = 0; x < matrix.GridSize.x; x++)
                     {
                         if( gameObjects[y, x] == null ){
-                            if( cells[y, x] != "" )
-                                InstantiatePrefab(x, y, cells[y, x]);
+                            InstantiatePrefab(x, y, cells[y, x]);
                         }
                         else{
-                            if( cells[y, x] != "" ) {
-                                if(  gameObjects[y, x].name == cells[y, x] )
-                                    continue;
+                            if(  gameObjects[y, x].name == cells[y, x] )
+                                continue;
 
-                                DestroyImmediate(gameObjects[y, x]);                            
-                                InstantiatePrefab(x, y, cells[y, x]);
-                            }
-                            else{
-                                DestroyImmediate(gameObjects[y, x]);
-                                gameObjects[y, x] = null;
-                            }
+                            DestroyImmediate(gameObjects[y, x]);                            
+                            InstantiatePrefab(x, y, cells[y, x]);
                         }
                     }
                 }                
