@@ -46,6 +46,12 @@ namespace Array2DEditor
         //     }
     	// }
 
+        void InstantiatePrefab(int x, int y){
+            var prefabGO = Instantiate(prefabToInstantiate, new Vector3(x * cellSizeX, -y * cellSizeY, 0), Quaternion.identity, piece.transform);
+            prefabGO.name = $"({x}, {y})";
+            gameObjects[y, x] = prefabGO;
+        }
+
         void Update()
         {
             if( piece == null )
@@ -61,17 +67,22 @@ namespace Array2DEditor
             {
                 for (var x = 0; x < matrix.GridSize.x; x++)
                 {
-                    if (cells[y, x] == "a")
-                    {
-                        if( gameObjects[y, x] == null ){
-                            var prefabGO = Instantiate(prefabToInstantiate, new Vector3(x * cellSizeX, -y * cellSizeY, 0), Quaternion.identity, piece.transform);
-                            prefabGO.name = $"({x}, {y})";
-                            gameObjects[y, x] = prefabGO;
-                        }
+                    if( gameObjects[y, x] == null ){
+                        if( cells[y, x] != "" )
+                            InstantiatePrefab(x, y);
                     }
                     else{
-                        DestroyImmediate(gameObjects[y, x]);
-                        gameObjects[y, x] = null;
+                        if( cells[y, x] != "" ) {
+                            if(  gameObjects[y, x].name == cells[y, x] )
+                                continue;
+
+                            DestroyImmediate(gameObjects[y, x]);                            
+                            InstantiatePrefab(x, y);
+                        }
+                        else{
+                            DestroyImmediate(gameObjects[y, x]);
+                            gameObjects[y, x] = null;
+                        }
                     }
                 }
             }
