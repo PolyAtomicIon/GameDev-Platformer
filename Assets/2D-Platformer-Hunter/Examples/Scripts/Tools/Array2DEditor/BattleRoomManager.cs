@@ -67,8 +67,11 @@ namespace Array2DEditor
         {
 
             if( !stopGeneration ){
-                if( piece == null )
-                    piece = new GameObject("Piece");
+                if( piece == null ){
+                	piece = GameObject.Find("Piece");
+                    if( piece == null )
+                        piece = new GameObject("Piece");
+                }
                 
                 if( gameObjects == null )
                     gameObjects = new GameObject[matrix.GridSize.y, matrix.GridSize.x];
