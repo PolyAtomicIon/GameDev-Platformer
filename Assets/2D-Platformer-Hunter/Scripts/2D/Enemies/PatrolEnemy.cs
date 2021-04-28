@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PatrolEnemy : Enemy
 { 
+    public Animator animator;
 
     public float speed = 100f;
     public Transform groundDetection;
