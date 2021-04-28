@@ -15,6 +15,20 @@ public class PlayerCharacter : MonoBehaviour, IDamagable, IHasInventory, IHasEqu
 
     private Inventory m_Inventory;
     public Inventory Inventory { get { return m_Inventory; } }
+    
+    public Image fillBar;
+
+    public void LoseHealth(float value){
+        if(Health <= 0){
+            return;
+        }
+        Health -= value;
+        fillBar.fillAmount = Health / 100;
+        if(Health <= 0){
+            Debug.Log("You Died");
+        }
+    }
+
 
     private Equipment m_Equipment;
     public Equipment Equipment { get { return m_Equipment; } }
@@ -26,7 +40,7 @@ public class PlayerCharacter : MonoBehaviour, IDamagable, IHasInventory, IHasEqu
 	public void TakeDamage (float damage){
         Debug.Log("Soo We will change Health variabe");
         
-        //Time.timeScale = 0;
+        LoseHealth(damage);
     }
 
     private void Awake()
@@ -45,6 +59,7 @@ public class PlayerCharacter : MonoBehaviour, IDamagable, IHasInventory, IHasEqu
     private void Start()
     {
         initCallback();
+        Health = 100f;
     }
 
     void Update()
@@ -65,6 +80,8 @@ public class PlayerCharacter : MonoBehaviour, IDamagable, IHasInventory, IHasEqu
         else if( Input.GetMouseButtonDown(1) ){
             Debug.Log("ABILITY ATTACK");
         }
+        
+        
     }
 
     private void initCallback()
