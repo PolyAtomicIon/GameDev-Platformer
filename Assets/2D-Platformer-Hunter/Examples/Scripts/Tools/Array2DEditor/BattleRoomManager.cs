@@ -1,4 +1,6 @@
 using UnityEngine;
+using System.Collections;
+using System.Collections.Generic;
 
 namespace Array2DEditor
 {
@@ -15,39 +17,40 @@ namespace Array2DEditor
 
         [SerializeField]
         private GameObject prefabToInstantiate = null;
-    
+        
+        [System.Serializable]
+        public class RoomCell
+        {
+            public string key;
+            public List<GameObject> prefabs;
+        }
+
+        [SerializeField]
+        private List<RoomCell> prefabs;
+
         GameObject piece;
         GameObject[,] gameObjects;
 
-    	// void Start()
-        // {
-        //     if (matrix == null || prefabToInstantiate == null)
-        //     {
-        //         Debug.LogError("Fill in all the fields in order to start this example.");
-        //         return;
-        //     }
-    
-        //     var cells = matrix.GetCells();
-    
-        //     piece = new GameObject("Piece");
-        //     gameObjects = new GameObject[matrix.GridSize.y, matrix.GridSize.x];
+        GameObject getRandomPrefabByKey(string key){
+            foreach(RoomCell cell in prefabs){
+                if( key == cell.key ){
+                    if( cell.prefabs.Count == 0 )
+                        return null;
+                    // change 0 to random index
+                    int index = 0;
+                    return cell.prefabs[index];
+                }
+            }
 
-        //     for (var y = 0; y < matrix.GridSize.y; y++)
-        //     {
-        //         for (var x = 0; x < matrix.GridSize.x; x++)
-        //         {
-        //             if (cells[y, x] == "a")
-        //             {
-        //                 var prefabGO = Instantiate(prefabToInstantiate, new Vector3(x * 3, -y, 0), Quaternion.identity, piece.transform);
-        //                 prefabGO.name = $"({x}, {y})";
-        //                 gameObjects[y, x] = prefabGO;
-        //             }
-        //         }
-        //     }
-    	// }
+            return null;
+        }
 
-        void InstantiatePrefab(int x, int y){
-            var prefabGO = Instantiate(prefabToInstantiate, new Vector3(x * cellSizeX, -y * cellSizeY, 0), Quaternion.identity, piece.transform);
+        void InstantiatePrefab(int x, int y, string key){
+            GameObject prefab = getRandomPrefabByKey( key );
+            if( prefab == null )
+                return;
+
+            var prefabGO = Instantiate(prefab, new Vector3(x * cellSizeX, -y * cellSizeY, 0), Quaternion.identity, piece.transform);
             prefabGO.name = $"({x}, {y})";
             gameObjects[y, x] = prefabGO;
         }
@@ -60,7 +63,6 @@ namespace Array2DEditor
             if( gameObjects == null )
                 gameObjects = new GameObject[matrix.GridSize.y, matrix.GridSize.x];
 
-
             var cells = matrix.GetCells();
 
             for (var y = 0; y < matrix.GridSize.y; y++)
@@ -69,7 +71,7 @@ namespace Array2DEditor
                 {
                     if( gameObjects[y, x] == null ){
                         if( cells[y, x] != "" )
-                            InstantiatePrefab(x, y);
+                            InstantiatePrefab(x, y, cells[y, x]);
                     }
                     else{
                         if( cells[y, x] != "" ) {
@@ -77,7 +79,7 @@ namespace Array2DEditor
                                 continue;
 
                             DestroyImmediate(gameObjects[y, x]);                            
-                            InstantiatePrefab(x, y);
+                            InstantiatePrefab(x, y, cells[y, x]);
                         }
                         else{
                             DestroyImmediate(gameObjects[y, x]);
