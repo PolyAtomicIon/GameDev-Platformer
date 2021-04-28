@@ -21,7 +21,7 @@ public class SpeedUpController : MonoBehaviour
 
     void Update()
     {
-        speedUpOnHoldingShift();
+        // speedUpOnHoldingShift();
     }
 
     private void speedUpOnHoldingShift()
