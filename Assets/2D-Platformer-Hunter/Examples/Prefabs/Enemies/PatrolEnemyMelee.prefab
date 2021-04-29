@@ -210,6 +210,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weapons:
   - {fileID: 111207337960011550}
+  abilities:
+  - {fileID: 0}
 --- !u!114 &2178639208364583920
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -229,13 +231,13 @@ MonoBehaviour:
   HitableTargets:
     serializedVersion: 2
     m_Bits: 1024
-  speed: 100
   direction: 1
+  animator: {fileID: 0}
+  speed: 100
   groundDetection: {fileID: 2239613777761772766}
   EnvironmentLayer:
     serializedVersion: 2
     m_Bits: 512
-  height: 1.4
 --- !u!1001 &5043484246401212988
 PrefabInstance:
   m_ObjectHideFlags: 0

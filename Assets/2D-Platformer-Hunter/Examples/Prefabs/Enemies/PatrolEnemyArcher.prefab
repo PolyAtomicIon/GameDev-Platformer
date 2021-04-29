@@ -209,6 +209,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weapons:
   - {fileID: 4101687326940783735}
+  abilities:
+  - {fileID: 0}
 --- !u!114 &4908881049330042781
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -228,8 +230,9 @@ MonoBehaviour:
   HitableTargets:
     serializedVersion: 2
     m_Bits: 1024
-  speed: 100
   direction: 1
+  animator: {fileID: 0}
+  speed: 100
   groundDetection: {fileID: 1562600953441060864}
   EnvironmentLayer:
     serializedVersion: 2

@@ -26,18 +26,6 @@ public class PlayerCharacter : MonoBehaviour, IDamagable, IHasInventory, IHasEqu
     private float startManaRecoveryTime = 0.3f;
     public Image ManaBar;
 
-    public Image fillBar;
-
-    public void LoseHealth(float value){
-        
-        Health -= value;
-        fillBar.fillAmount = Health;
-        Debug.Log(Health);
-        if(Health <= 0){
-            Debug.Log("You Died");
-        }
-    }
-
     private Equipment m_Equipment;
     public Equipment Equipment { get { return m_Equipment; } }
 

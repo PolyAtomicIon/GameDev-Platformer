@@ -211,14 +211,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb2D: {fileID: 0}
+  radius: 6
+  player: {fileID: 0}
   Weapon: {fileID: 7707009163538619810}
-  aiPath: {fileID: 0}
-  gfx: {fileID: 4781833673342691509}
-  direction: 1
   HitableTargets:
     serializedVersion: 2
     m_Bits: 1024
-  radius: 6
+  direction: 1
+  aiPath: {fileID: 0}
+  gfx: {fileID: 4781833673342691509}
 --- !u!114 &7707009163538619810
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -233,6 +234,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weapons:
   - {fileID: 1550845995748209760}
+  abilities:
+  - {fileID: 0}
 --- !u!61 &8911069770166115993
 BoxCollider2D:
   m_ObjectHideFlags: 0
