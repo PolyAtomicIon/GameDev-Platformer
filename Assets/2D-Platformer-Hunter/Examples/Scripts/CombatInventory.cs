@@ -8,6 +8,7 @@ public class CombatInventory : MonoBehaviour
 {
     
     public List<Weapon> weapons;
+    public List<Weapon> abilities;
     private int curWeaponIndex;
 
     public CombatInventory()
@@ -34,6 +35,11 @@ public class CombatInventory : MonoBehaviour
 
     public void Attack(){
         weapons[curWeaponIndex].Attack();
+    }
+
+    
+    public void AbilityAttack(){
+        abilities[curWeaponIndex].Attack();
     }
 
 }

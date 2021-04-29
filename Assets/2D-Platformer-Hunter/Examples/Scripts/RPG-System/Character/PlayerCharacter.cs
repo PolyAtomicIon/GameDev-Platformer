@@ -79,6 +79,7 @@ public class PlayerCharacter : MonoBehaviour, IDamagable, IHasInventory, IHasEqu
 
         else if( Input.GetMouseButtonDown(1) ){
             Debug.Log("ABILITY ATTACK");
+            Weapon.AbilityAttack();
         }
         
         
