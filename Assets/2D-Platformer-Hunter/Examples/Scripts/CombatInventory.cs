@@ -32,7 +32,7 @@ public class CombatInventory : MonoBehaviour
     }
 
     public void Initialize(){
-        for(int i=0; i<weapons.Countl; i++)
+        for(int i=0; i<weapons.Count; i++)
             DeactivateWeapon(i);
 
         ActivateWeapon(curWeaponIndex);
