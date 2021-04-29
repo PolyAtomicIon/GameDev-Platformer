@@ -16,6 +16,7 @@ public class PlayerCharacter : MonoBehaviour, IDamagable, IHasInventory, IHasEqu
     private Inventory m_Inventory;
     public Inventory Inventory { get { return m_Inventory; } }
     
+    public int onTrapDamageAmount;
     public Image HealthBar;
 
     [SerializeField]
@@ -167,7 +168,8 @@ public class PlayerCharacter : MonoBehaviour, IDamagable, IHasInventory, IHasEqu
     }
     void OnTriggerEnter2D(Collider2D other) {
         if (other.tag == "spike"){
-            Debug.Log("dead");
+            // Debug.Log("dead");
+            TakeDamage(onTrapDamageAmount);
         }
     }
 }

@@ -209,7 +209,7 @@ Animator:
   m_GameObject: {fileID: 4949561106108286671}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: fe49df5b72ea9ee469b3dddda53d65bb, type: 2}
+  m_Controller: {fileID: 0}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -256,7 +256,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de1aebef88baa3d478d3d3de64fee329, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fillBar: {fileID: 0}
+  onTrapDamageAmount: 10
+  HealthBar: {fileID: 0}
+  Mana: 100
+  attackManaAmount: 25
+  recoverManaAmount: 1
+  ManaBar: {fileID: 0}
 --- !u!114 &4950644072530514047
 MonoBehaviour:
   m_ObjectHideFlags: 0
