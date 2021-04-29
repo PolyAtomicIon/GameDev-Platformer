@@ -15,6 +15,16 @@ public class PlayerCharacter : MonoBehaviour, IDamagable, IHasInventory, IHasEqu
 
     private Inventory m_Inventory;
     public Inventory Inventory { get { return m_Inventory; } }
+    
+    public Image HealthBar;
+
+    [SerializeField]
+    private float Mana;
+    public float attackManaAmount;
+    public float recoverManaAmount;
+    private float manaRecoveryTime = 0;
+    private float startManaRecoveryTime = 0.3f;
+    public Image ManaBar;
 
     public Image fillBar;
 
@@ -35,10 +45,46 @@ public class PlayerCharacter : MonoBehaviour, IDamagable, IHasInventory, IHasEqu
     
 	public float Health { get; set; }
     TextMeshProUGUI HealthTextLabel ;
+
+    private void MagicAttack(){
+        if(Mana <= attackManaAmount){
+            Debug.Log("not enough man");
+            return;
+        }
+        if( Weapon.AbilityAttack() )
+            UseMana(-attackManaAmount);
+    }
+
+    private void UseMana(float value){
+        Mana += value;
+
+        Mana = Mathf.Min(100, Mana);
+        Mana = Mathf.Max(0, Mana);
+
+        ManaBar.fillAmount = Mana / 100;
+    }
+
 	public void TakeDamage (float damage){
-        Debug.Log("Soo We will change Health variabe");
+        // Debug.Log("Soo We will change Health variabe");
+        if(Health <= 0){
+            return;
+        }
+        Health -= damage;
+        HealthBar.fillAmount = Health / 100;
+        if(Health <= 0){
+            Debug.Log("You Died");
+        }
+    }
+
+    void RecoverMana(){
         
-        LoseHealth(damage);
+        manaRecoveryTime -= Time.deltaTime;
+        if (manaRecoveryTime <= 0)
+        {
+            manaRecoveryTime = startManaRecoveryTime;
+            UseMana(recoverManaAmount);
+        }
+
     }
 
     private void Awake()
@@ -72,12 +118,17 @@ public class PlayerCharacter : MonoBehaviour, IDamagable, IHasInventory, IHasEqu
         }
 
         if( Input.GetMouseButtonDown(0) ){
+            Debug.Log("Weapon ATTACK");
             Weapon.Attack();
         }
 
         else if( Input.GetMouseButtonDown(1) ){
             Debug.Log("ABILITY ATTACK");
+            MagicAttack();
         }
+        
+        RecoverMana();
+
     }
 
     private void initCallback()

@@ -8,6 +8,7 @@ public class CombatInventory : MonoBehaviour
 {
     
     public List<Weapon> weapons;
+    public List<Weapon> abilities;
     private int curWeaponIndex;
 
     public CombatInventory()
@@ -21,19 +22,31 @@ public class CombatInventory : MonoBehaviour
             weapon.Deactivate();
         }
         weapons[curWeaponIndex].Activate();
+        if( abilities[curWeaponIndex] )
+            abilities[curWeaponIndex].Activate();
     }
 
     public void ChangeWeapon(){
+
+        if( abilities[curWeaponIndex] )
+            abilities[curWeaponIndex].Deactivate();
         weapons[curWeaponIndex].Deactivate();
 
         curWeaponIndex += 1;
         curWeaponIndex %= weapons.Count;
-
+        
+        if( abilities[curWeaponIndex] )
+            abilities[curWeaponIndex].Activate();
         weapons[curWeaponIndex].Activate();
     }
 
     public void Attack(){
         weapons[curWeaponIndex].Attack();
+    }
+
+    
+    public bool AbilityAttack(){
+        return abilities[curWeaponIndex].Attack();
     }
 
 }

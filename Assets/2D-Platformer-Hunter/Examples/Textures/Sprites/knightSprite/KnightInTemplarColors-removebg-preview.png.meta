@@ -1,0 +1,1424 @@
+fileFormatVersion: 2
+guid: b9cba3730f06c564d983fe11935c7970
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2774312932506438548
+    second: KnightInTemplarColors-removebg-preview_2
+  - first:
+      213: 6305320278565222820
+    second: KnightInTemplarColors-removebg-preview_3
+  - first:
+      213: 7409175856933002071
+    second: KnightInTemplarColors-removebg-preview_5
+  - first:
+      213: 5383940576266761476
+    second: KnightInTemplarColors-removebg-preview_7
+  - first:
+      213: -1930033966691178840
+    second: KnightInTemplarColors-removebg-preview_17
+  - first:
+      213: 6800531056713418401
+    second: KnightInTemplarColors-removebg-preview_19
+  - first:
+      213: 1820649593942946594
+    second: KnightInTemplarColors-removebg-preview_21
+  - first:
+      213: 3178191424073143911
+    second: KnightInTemplarColors-removebg-preview_22
+  - first:
+      213: 7503860490892537897
+    second: KnightInTemplarColors-removebg-preview_23
+  - first:
+      213: -6099328491080196024
+    second: KnightInTemplarColors-removebg-preview_24
+  - first:
+      213: 5658259859484027839
+    second: KnightInTemplarColors-removebg-preview_25
+  - first:
+      213: -1676970839703772735
+    second: KnightInTemplarColors-removebg-preview_26
+  - first:
+      213: 559380189215237145
+    second: KnightInTemplarColors-removebg-preview_27
+  - first:
+      213: -296916784557608704
+    second: KnightInTemplarColors-removebg-preview_28
+  - first:
+      213: 4929876648149808584
+    second: KnightInTemplarColors-removebg-preview_29
+  - first:
+      213: 3568515755280409522
+    second: KnightInTemplarColors-removebg-preview_30
+  - first:
+      213: -8645330699660426811
+    second: KnightInTemplarColors-removebg-preview_31
+  - first:
+      213: 7538329267051144216
+    second: KnightInTemplarColors-removebg-preview_32
+  - first:
+      213: 80442311703343744
+    second: KnightInTemplarColors-removebg-preview_33
+  - first:
+      213: -5430951271559709404
+    second: KnightInTemplarColors-removebg-preview_34
+  - first:
+      213: -7142853245981012321
+    second: KnightInTemplarColors-removebg-preview_35
+  - first:
+      213: -1846212747223396337
+    second: KnightInTemplarColors-removebg-preview_36
+  - first:
+      213: -3566579414621145222
+    second: KnightInTemplarColors-removebg-preview_37
+  - first:
+      213: -1062649906107806487
+    second: KnightInTemplarColors-removebg-preview_38
+  - first:
+      213: -8764842538095909776
+    second: KnightInTemplarColors-removebg-preview_39
+  - first:
+      213: 6060556302799223094
+    second: KnightInTemplarColors-removebg-preview_40
+  - first:
+      213: -2516801301613546103
+    second: KnightInTemplarColors-removebg-preview_41
+  - first:
+      213: 8112232406161250872
+    second: KnightInTemplarColors-removebg-preview_42
+  - first:
+      213: 2630132364740433337
+    second: KnightInTemplarColors-removebg-preview_43
+  - first:
+      213: 7902740720001136524
+    second: KnightInTemplarColors-removebg-preview_44
+  - first:
+      213: -5572400394525928506
+    second: KnightInTemplarColors-removebg-preview_45
+  - first:
+      213: 4735023423642248117
+    second: KnightInTemplarColors-removebg-preview_46
+  - first:
+      213: 1751698648615988912
+    second: KnightInTemplarColors-removebg-preview_47
+  - first:
+      213: 8011873104632890211
+    second: KnightInTemplarColors-removebg-preview_48
+  - first:
+      213: -2700889478658119329
+    second: KnightInTemplarColors-removebg-preview_49
+  - first:
+      213: -3529089595929788057
+    second: KnightInTemplarColors-removebg-preview_50
+  - first:
+      213: -4270932487306926613
+    second: KnightInTemplarColors-removebg-preview_51
+  - first:
+      213: 6977812146644733004
+    second: KnightInTemplarColors-removebg-preview_52
+  - first:
+      213: 4457442814816778077
+    second: KnightInTemplarColors-removebg-preview_53
+  - first:
+      213: 4272590162679204668
+    second: KnightInTemplarColors-removebg-preview_54
+  - first:
+      213: -8083129417352810088
+    second: KnightInTemplarColors-removebg-preview_55
+  - first:
+      213: 4117291027397992879
+    second: KnightInTemplarColors-removebg-preview_56
+  - first:
+      213: -183288241229173009
+    second: KnightInTemplarColors-removebg-preview_57
+  - first:
+      213: 4610734472485028033
+    second: KnightInTemplarColors-removebg-preview_58
+  - first:
+      213: -6563139995333978516
+    second: KnightInTemplarColors-removebg-preview_59
+  - first:
+      213: 4922449648484197000
+    second: KnightInTemplarColors-removebg-preview_60
+  - first:
+      213: 3356362444727489668
+    second: KnightInTemplarColors-removebg-preview_61
+  - first:
+      213: -7389033473593585500
+    second: KnightInTemplarColors-removebg-preview_62
+  - first:
+      213: 5075232019157346686
+    second: KnightInTemplarColors-removebg-preview_63
+  - first:
+      213: -5711849612517530669
+    second: KnightInTemplarColors-removebg-preview_64
+  - first:
+      213: 1203826729693966092
+    second: KnightInTemplarColors-removebg-preview_65
+  - first:
+      213: 2825999547141635266
+    second: KnightInTemplarColors-removebg-preview_66
+  - first:
+      213: -5078779423186024257
+    second: KnightInTemplarColors-removebg-preview_67
+  - first:
+      213: 217516510624817239
+    second: KnightInTemplarColors-removebg-preview_68
+  - first:
+      213: -6071308115565203561
+    second: KnightInTemplarColors-removebg-preview_69
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: KnightInTemplarColors-removebg-preview_2
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 535
+        width: 31
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c647e2a3619af79d0800000000000000
+      internalID: -2774312932506438548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KnightInTemplarColors-removebg-preview_3
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 535
+        width: 31
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a972f6e26ff08750800000000000000
+      internalID: 6305320278565222820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KnightInTemplarColors-removebg-preview_5
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 428
+        width: 36
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75b54e6bf2ea2d660800000000000000
+      internalID: 7409175856933002071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KnightInTemplarColors-removebg-preview_7
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 425
+        width: 188
+        height: 75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4053134cd6997ba40800000000000000
+      internalID: 5383940576266761476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KnightInTemplarColors-removebg-preview_17
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 340
+        width: 37
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a62fe245542735e0800000000000000
+      internalID: -1930033966691178840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KnightInTemplarColors-removebg-preview_19
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 316
+        width: 36
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a64a6f17f6506e50800000000000000
+      internalID: 6800531056713418401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KnightInTemplarColors-removebg-preview_21
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 316
+        width: 76
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 223bd63d82f344910800000000000000
+      internalID: 1820649593942946594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KnightInTemplarColors-removebg-preview_22
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 316
+        width: 76
+        height: 75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 766921ce2443b1c20800000000000000
+      internalID: 3178191424073143911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KnightInTemplarColors-removebg-preview_23
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 316
+        width: 36
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 920fcbbfb51132860800000000000000
+      internalID: 7503860490892537897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KnightInTemplarColors-removebg-preview_24
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 290
+        width: 21
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 840eeb09d05da5ba0800000000000000
+      internalID: -6099328491080196024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KnightInTemplarColors-removebg-preview_25
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 276
+        width: 31
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbba56b0d5d268e40800000000000000
+      internalID: 5658259859484027839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KnightInTemplarColors-removebg-preview_26
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 276
+        width: 16
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c1a4c008e33ab8e0800000000000000
+      internalID: -1676970839703772735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KnightInTemplarColors-removebg-preview_27
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 281
+        width: 20
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 914a090815153c700800000000000000
+      internalID: 559380189215237145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KnightInTemplarColors-removebg-preview_28
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 232
+        width: 37
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 001b790f1c321ebf0800000000000000
+      internalID: -296916784557608704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KnightInTemplarColors-removebg-preview_29
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 241
+        width: 4
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c5767f11b07a6440800000000000000
+      internalID: 4929876648149808584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KnightInTemplarColors-removebg-preview_30
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 241
+        width: 26
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b3afd03c2ae58130800000000000000
+      internalID: 3568515755280409522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KnightInTemplarColors-removebg-preview_31
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 241
+        width: 6
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c106f8988d950880800000000000000
+      internalID: -8645330699660426811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KnightInTemplarColors-removebg-preview_32
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 240
+        width: 75
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 814a38257868d9860800000000000000
+      internalID: 7538329267051144216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KnightInTemplarColors-removebg-preview_33
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 202
+        width: 36
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0823df53bd9cd1100800000000000000
+      internalID: 80442311703343744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KnightInTemplarColors-removebg-preview_34
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 203
+        width: 36
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42d3a3ac79261a4b0800000000000000
+      internalID: -5430951271559709404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KnightInTemplarColors-removebg-preview_35
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 174
+        width: 29
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9e4e8631dc7fdc90800000000000000
+      internalID: -7142853245981012321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KnightInTemplarColors-removebg-preview_36
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 176
+        width: 18
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0093fdb94fe066e0800000000000000
+      internalID: -1846212747223396337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KnightInTemplarColors-removebg-preview_37
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 138
+        width: 36
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7739404be6f08ec0800000000000000
+      internalID: -3566579414621145222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KnightInTemplarColors-removebg-preview_38
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 174
+        width: 29
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ec87d16a85b041f0800000000000000
+      internalID: -1062649906107806487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KnightInTemplarColors-removebg-preview_39
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 176
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0746f8456260d5680800000000000000
+      internalID: -8764842538095909776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KnightInTemplarColors-removebg-preview_40
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 176
+        width: 16
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6393a91e8db6b1450800000000000000
+      internalID: 6060556302799223094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KnightInTemplarColors-removebg-preview_41
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 176
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 985751ffc86821dd0800000000000000
+      internalID: -2516801301613546103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KnightInTemplarColors-removebg-preview_42
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 176
+        width: 13
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83a57a89460749070800000000000000
+      internalID: 8112232406161250872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KnightInTemplarColors-removebg-preview_43
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 138
+        width: 36
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b59c90637b108420800000000000000
+      internalID: 2630132364740433337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KnightInTemplarColors-removebg-preview_44
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 138
+        width: 36
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c87bea770dc2cad60800000000000000
+      internalID: 7902740720001136524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KnightInTemplarColors-removebg-preview_45
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 138
+        width: 37
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c319027d5bdaa2b0800000000000000
+      internalID: -5572400394525928506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KnightInTemplarColors-removebg-preview_46
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 157
+        width: 5
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b3a95177be26b140800000000000000
+      internalID: 4735023423642248117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KnightInTemplarColors-removebg-preview_47
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 138
+        width: 37
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bea948d3a84f4810800000000000000
+      internalID: 1751698648615988912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KnightInTemplarColors-removebg-preview_48
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 138
+        width: 37
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3634623d324ef2f60800000000000000
+      internalID: 8011873104632890211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KnightInTemplarColors-removebg-preview_49
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 107
+        width: 23
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f592efe3453848ad0800000000000000
+      internalID: -2700889478658119329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KnightInTemplarColors-removebg-preview_50
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 111
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 761041ed5b7260fc0800000000000000
+      internalID: -3529089595929788057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KnightInTemplarColors-removebg-preview_51
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 105
+        width: 4
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be5256af7899ab4c0800000000000000
+      internalID: -4270932487306926613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KnightInTemplarColors-removebg-preview_52
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 112
+        width: 32
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4c4a266d2b26d060800000000000000
+      internalID: 6977812146644733004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KnightInTemplarColors-removebg-preview_53
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 111
+        width: 4
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5775cf9f940cdd30800000000000000
+      internalID: 4457442814816778077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KnightInTemplarColors-removebg-preview_54
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 93
+        width: 20
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3b8255ad1a4b4b30800000000000000
+      internalID: 4272590162679204668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KnightInTemplarColors-removebg-preview_55
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 72
+        width: 75
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 891fc250f94f2df80800000000000000
+      internalID: -8083129417352810088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KnightInTemplarColors-removebg-preview_56
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 72
+        width: 32
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa1e5f4006e832930800000000000000
+      internalID: 4117291027397992879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KnightInTemplarColors-removebg-preview_57
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 72
+        width: 45
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fee6702d054d47df0800000000000000
+      internalID: -183288241229173009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KnightInTemplarColors-removebg-preview_58
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 72
+        width: 36
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c04e12f29e9cff30800000000000000
+      internalID: 4610734472485028033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KnightInTemplarColors-removebg-preview_59
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 102
+        width: 4
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6695fe72fa0be4a0800000000000000
+      internalID: -6563139995333978516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KnightInTemplarColors-removebg-preview_60
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 101
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 882a5a200ed005440800000000000000
+      internalID: 4922449648484197000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KnightInTemplarColors-removebg-preview_61
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 72
+        width: 37
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48491775cd1349e20800000000000000
+      internalID: 3356362444727489668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KnightInTemplarColors-removebg-preview_62
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 72
+        width: 36
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a0dbfc5431e47990800000000000000
+      internalID: -7389033473593585500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KnightInTemplarColors-removebg-preview_63
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 72
+        width: 36
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e79ef86b1a8de6640800000000000000
+      internalID: 5075232019157346686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KnightInTemplarColors-removebg-preview_64
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 44
+        width: 15
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d3a0734a0f6bb0b0800000000000000
+      internalID: -5711849612517530669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KnightInTemplarColors-removebg-preview_65
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 45
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0f6782580ad4b010800000000000000
+      internalID: 1203826729693966092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KnightInTemplarColors-removebg-preview_66
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 5
+        width: 36
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ccbac68d97f73720800000000000000
+      internalID: 2825999547141635266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KnightInTemplarColors-removebg-preview_67
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 4
+        width: 151
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb80f6ce50d8489b0800000000000000
+      internalID: -5078779423186024257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KnightInTemplarColors-removebg-preview_68
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 5
+        width: 74
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 750239c2d16c40300800000000000000
+      internalID: 217516510624817239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KnightInTemplarColors-removebg-preview_69
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 5
+        width: 113
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79f2ac1af616ebba0800000000000000
+      internalID: -6071308115565203561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

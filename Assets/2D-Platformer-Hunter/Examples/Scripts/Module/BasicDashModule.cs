@@ -52,10 +52,10 @@ namespace DYP
             float displacment = xvalue - prevXvalue;
             float speed = 0.0f;
 
-            if (displacment > 0.0f)
-            {
+            // if (displacment > 0.0f)
+            // {
                 speed = displacment / ((tvalue - prevTvalue) * DashTime);
-            }
+            // }
 
             //var speed = EasingFunction.GetEasingFunctionDerivative(DashEaseType)
             //        (0, DashDistance, tvalue) / DashTime;
