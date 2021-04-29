@@ -1675,7 +1675,7 @@ Transform:
   m_LocalScale: {x: 4.367612, y: 3.6823292, z: 1}
   m_Children: []
   m_Father: {fileID: 1359317304}
-  m_RootOrder: 14
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &380875243
 SpriteRenderer:
@@ -3618,6 +3618,75 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
+--- !u!1001 &768529599
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1546379361356865316, guid: fa0920ae1f82a7d4796a92bbf81746ce,
+        type: 3}
+      propertyPath: m_Name
+      value: EventSystem
+      objectReference: {fileID: 0}
+    - target: {fileID: 1546379361356865319, guid: fa0920ae1f82a7d4796a92bbf81746ce,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1546379361356865319, guid: fa0920ae1f82a7d4796a92bbf81746ce,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1546379361356865319, guid: fa0920ae1f82a7d4796a92bbf81746ce,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1546379361356865319, guid: fa0920ae1f82a7d4796a92bbf81746ce,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1546379361356865319, guid: fa0920ae1f82a7d4796a92bbf81746ce,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1546379361356865319, guid: fa0920ae1f82a7d4796a92bbf81746ce,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1546379361356865319, guid: fa0920ae1f82a7d4796a92bbf81746ce,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1546379361356865319, guid: fa0920ae1f82a7d4796a92bbf81746ce,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1546379361356865319, guid: fa0920ae1f82a7d4796a92bbf81746ce,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1546379361356865319, guid: fa0920ae1f82a7d4796a92bbf81746ce,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1546379361356865319, guid: fa0920ae1f82a7d4796a92bbf81746ce,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: fa0920ae1f82a7d4796a92bbf81746ce, type: 3}
 --- !u!1001 &802490232
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5823,13 +5892,13 @@ Transform:
   - {fileID: 967972405}
   - {fileID: 1281369019}
   - {fileID: 930362859}
+  - {fileID: 380875242}
   - {fileID: 1404551558}
   - {fileID: 1613294723}
   - {fileID: 1754567524}
   - {fileID: 1319480808}
   - {fileID: 1975242619}
   - {fileID: 756114366}
-  - {fileID: 380875242}
   m_Father: {fileID: 931837268}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -8050,6 +8119,21 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 4950644072530514047, guid: 95227cfb34671924b82fd260fefb1b4f,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4981715664052591961, guid: 95227cfb34671924b82fd260fefb1b4f,
+        type: 3}
+      propertyPath: m_WallInteraction.CanWallClimb
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4981715664052591961, guid: 95227cfb34671924b82fd260fefb1b4f,
+        type: 3}
+      propertyPath: m_WallInteraction.CanWallSlide
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4981886431496533163, guid: 95227cfb34671924b82fd260fefb1b4f,
         type: 3}
       propertyPath: Mana
@@ -8091,6 +8175,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4209057260513843309, guid: 57ed03962bb284d45a2200f3459d3de8,
         type: 3}
+    - target: {fileID: 5036717147120615827, guid: 95227cfb34671924b82fd260fefb1b4f,
+        type: 3}
+      propertyPath: m_Avatar
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5036717147120615827, guid: 95227cfb34671924b82fd260fefb1b4f,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 636cf293eefd2ef44aac5bc8ffe8c0ee, type: 2}
     - target: {fileID: 6458108677125805114, guid: 95227cfb34671924b82fd260fefb1b4f,
         type: 3}
       propertyPath: m_Layer

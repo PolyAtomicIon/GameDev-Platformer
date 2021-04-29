@@ -17,27 +17,36 @@ public class CombatInventory : MonoBehaviour
         curWeaponIndex = 0;   
     }
 
+    void DeactivateWeapon(int index){
+        if( abilities[index] )
+            abilities[index].Deactivate();
+        if( weapons[index] )
+            weapons[index].Deactivate();
+    }
+
+    void ActivateWeapon(int index){
+        if( abilities[index] )
+            abilities[index].Activate();
+        if( weapons[index] )
+            weapons[index].Activate();
+    }
+
     public void Initialize(){
-        foreach(Weapon weapon in weapons){
-            weapon.Deactivate();
-        }
-        weapons[curWeaponIndex].Activate();
-        if( abilities[curWeaponIndex] )
-            abilities[curWeaponIndex].Activate();
+        for(int i=0; i<weapons.Countl; i++)
+            DeactivateWeapon(i);
+
+        ActivateWeapon(curWeaponIndex);
     }
 
     public void ChangeWeapon(){
 
-        if( abilities[curWeaponIndex] )
-            abilities[curWeaponIndex].Deactivate();
-        weapons[curWeaponIndex].Deactivate();
+        DeactivateWeapon(curWeaponIndex);
 
         curWeaponIndex += 1;
         curWeaponIndex %= weapons.Count;
-        
-        if( abilities[curWeaponIndex] )
-            abilities[curWeaponIndex].Activate();
-        weapons[curWeaponIndex].Activate();
+
+        ActivateWeapon(curWeaponIndex);
+
     }
 
     public void Attack(){
