@@ -17,7 +17,7 @@ namespace Array2DEditor
         private Array2DString matrix;
 
         [SerializeField]
-        private GameObject prefabToInstantiate = null;
+        // private GameObject prefabToInstantiate = null;
         
         [System.Serializable]
         public class RoomCell
@@ -61,7 +61,7 @@ namespace Array2DEditor
             if( prefab == null )
                 return;
 
-            var prefabGO = Instantiate(prefab, new Vector3(x * cellSizeX, -y * cellSizeY, 0), Quaternion.identity, piece.transform);
+            var prefabGO = Instantiate(prefab, new Vector3(transform.position.x + x * cellSizeX, transform.position.y + -y * cellSizeY, 0), Quaternion.identity, piece.transform);
             prefabGO.name = $"({x}, {y})";
             gameObjects[y, x] = prefabGO;
         }

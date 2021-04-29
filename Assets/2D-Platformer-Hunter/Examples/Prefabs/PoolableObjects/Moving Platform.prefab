@@ -144,7 +144,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_PassengerLayer:
     serializedVersion: 2
-    m_Bits: 1024
+    m_Bits: 1280
 --- !u!114 &8265418030243507875
 MonoBehaviour:
   m_ObjectHideFlags: 0
