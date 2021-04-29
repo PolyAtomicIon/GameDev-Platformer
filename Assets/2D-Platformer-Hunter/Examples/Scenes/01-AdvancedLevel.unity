@@ -4730,6 +4730,11 @@ PrefabInstance:
       propertyPath: startTimeBtwShots
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2178639208364583920, guid: 5b2562f2d2181d84e9dde2d88afce3af,
+        type: 3}
+      propertyPath: radius
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 8326345800403291535, guid: 5b2562f2d2181d84e9dde2d88afce3af,
         type: 3}
       propertyPath: m_RootOrder
