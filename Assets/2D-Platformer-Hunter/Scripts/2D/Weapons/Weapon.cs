@@ -4,7 +4,7 @@ using System;
 
 public class Weapon : MonoBehaviour
 {
-    public float timeBtwShots;
+    private float timeBtwShots;
     public float startTimeBtwShots;
     public Transform attackPos;
 
@@ -29,18 +29,20 @@ public class Weapon : MonoBehaviour
         Debug.Log("handling physics of attack:)");
     }
 
-    public void Attack()
+    public bool Attack()
     {
         if (timeBtwShots <= 0)
         {
             HandlePhysicsOfAttack();
             ResetTimer();
+            return true;
             // Activate SOUND
             // Activate VFX
             // Activate Animation
             // Ammo modification: decrease number of bullets -> RangedWeopon
             // Combo hits -> MeleeWeapon
         }
+        return false;
     }
     
     public void Update()
