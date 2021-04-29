@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading;
 
 namespace Array2DEditor
 {
@@ -39,7 +40,8 @@ namespace Array2DEditor
                     if( cell.prefabs.Count == 0 )
                         return null;
                     // change 0 to random index
-                    int index = Random.Range(0, cell.prefabs.Count);
+                    // int index = Random.Range(0, cell.prefabs.Count);
+                    int index = ThreadSafeRandom.ThisThreadsRandom.Next(cell.prefabs.Count);
                     return cell.prefabs[index];
                 }
             }
@@ -50,7 +52,8 @@ namespace Array2DEditor
         void InstantiatePrefab(int x, int y, string key){
 
             if( key == "" ){
-                int index = Random.Range(2, prefabs.Count);
+                // int index = Random.Range(2, prefabs.Count);
+                int index = ThreadSafeRandom.ThisThreadsRandom.Next(2, prefabs.Count);
                 key = prefabs[index].key;
             }
 
