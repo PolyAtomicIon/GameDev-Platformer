@@ -8,7 +8,7 @@ public class MeleeCombatWeapon : Weapon
 
     public LayerMask whatIsEnemies;
     public float attackRange;
-    public int damage;
+    public int damage = 0;
 
     // Add combo attack
 
