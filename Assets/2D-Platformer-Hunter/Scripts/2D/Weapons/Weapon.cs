@@ -7,6 +7,7 @@ public class Weapon : MonoBehaviour
     private float timeBtwShots;
     public float startTimeBtwShots;
     public Transform attackPos;
+    public AudioSource attackSound;
 
     public void Activate(){
         gameObject.SetActive(true);
@@ -24,6 +25,11 @@ public class Weapon : MonoBehaviour
         timeBtwShots -= Time.deltaTime;
     }
 
+    public void PlayAudio(){
+        if( attackSound )
+            attackSound.Play();
+    }
+
     // ex: shoot a bullet, check for collisions
     public virtual void HandlePhysicsOfAttack(){
         Debug.Log("handling physics of attack:)");
@@ -35,12 +41,12 @@ public class Weapon : MonoBehaviour
         {
             HandlePhysicsOfAttack();
             ResetTimer();
-            return true;
+            PlayAudio();
             // Activate SOUND
             // Activate VFX
             // Activate Animation
             // Ammo modification: decrease number of bullets -> RangedWeopon
-            // Combo hits -> MeleeWeapon
+            return true;
         }
         return false;
     }

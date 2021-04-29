@@ -1550,6 +1550,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startTimeBtwShots: 0.35
   attackPos: {fileID: 2073274399}
+  attackSound: {fileID: 0}
   offset: 0
   projectile: {fileID: 4075874817375458081, guid: 3d5ce2b5b2bcba04a86d79b6359f697e,
     type: 3}
@@ -1768,6 +1769,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startTimeBtwShots: 0.35
   attackPos: {fileID: 313220693}
+  attackSound: {fileID: 0}
   offset: 0
   projectile: {fileID: 4075874817375458081, guid: 3d5ce2b5b2bcba04a86d79b6359f697e,
     type: 3}
@@ -2272,6 +2274,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startTimeBtwShots: 0.35
   attackPos: {fileID: 1264208864}
+  attackSound: {fileID: 0}
   offset: 0
   projectile: {fileID: 4075874817375458081, guid: 3d5ce2b5b2bcba04a86d79b6359f697e,
     type: 3}
@@ -4019,6 +4022,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startTimeBtwShots: 0.35
   attackPos: {fileID: 2116486694}
+  attackSound: {fileID: 0}
   offset: 0
   projectile: {fileID: 4075874817375458081, guid: 3d5ce2b5b2bcba04a86d79b6359f697e,
     type: 3}
@@ -5096,6 +5100,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startTimeBtwShots: 0.35
   attackPos: {fileID: 2082310838}
+  attackSound: {fileID: 0}
   offset: 0
   projectile: {fileID: 4075874817375458081, guid: 3d5ce2b5b2bcba04a86d79b6359f697e,
     type: 3}
@@ -6929,6 +6934,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startTimeBtwShots: 0.35
   attackPos: {fileID: 1381155848}
+  attackSound: {fileID: 0}
   offset: 0
   projectile: {fileID: 4075874817375458081, guid: 3d5ce2b5b2bcba04a86d79b6359f697e,
     type: 3}
@@ -8303,6 +8309,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startTimeBtwShots: 0.35
   attackPos: {fileID: 1034641027}
+  attackSound: {fileID: 0}
   offset: 0
   projectile: {fileID: 4075874817375458081, guid: 3d5ce2b5b2bcba04a86d79b6359f697e,
     type: 3}
