@@ -49,8 +49,9 @@ public class PlayerCharacter : MonoBehaviour, IDamagable, IHasInventory, IHasEqu
 
         Mana = Mathf.Min(100, Mana);
         Mana = Mathf.Max(0, Mana);
-
-        ManaBar.fillAmount = Mana / 100;
+        
+        if( ManaBar )
+            ManaBar.fillAmount = Mana / 100;
     }
 
 	public void TakeDamage (float damage){
