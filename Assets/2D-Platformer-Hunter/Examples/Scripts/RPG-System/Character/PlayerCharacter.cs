@@ -35,6 +35,8 @@ public class PlayerCharacter : MonoBehaviour, IDamagable, IHasInventory, IHasEqu
 	public float Health { get; set; }
     TextMeshProUGUI HealthTextLabel ;
 
+    public GameManager gameManager;
+
     private void MagicAttack(){
         if(Mana <= attackManaAmount){
             Debug.Log("not enough man");
@@ -63,6 +65,7 @@ public class PlayerCharacter : MonoBehaviour, IDamagable, IHasInventory, IHasEqu
         HealthBar.fillAmount = Health / 100;
         if(Health <= 0){
             Debug.Log("You Died");
+            gameManager.RestartLevel();
         }
     }
 
@@ -94,6 +97,9 @@ public class PlayerCharacter : MonoBehaviour, IDamagable, IHasInventory, IHasEqu
     {
         initCallback();
         Health = 100f;
+
+        transform.position = gameManager.GetCheckpoint();
+
     }
 
     void Update()
