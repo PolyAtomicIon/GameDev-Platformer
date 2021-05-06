@@ -8,6 +8,8 @@ public class GameManager : MonoBehaviour
     public AudioSource attackSound_dynamic;
     public AudioSource attackSound_peaceful;
 
+    private CheckpointItem curCheckpointItem;
+
     [System.Serializable]
     public class CheckpointItem
     {
@@ -55,23 +57,30 @@ public class GameManager : MonoBehaviour
     }
 
     void PlayBackgroundSound(){
-        CheckpointItem curCheckpoint = GetCheckpoint();
-        if( curCheckpoint.IsDynamicMusic() )
+        if( curCheckpointItem.IsDynamicMusic() ){
             attackSound_dynamic.Play();
-        else
+            attackSound_peaceful.Stop();
+        }
+        else{
             attackSound_peaceful.Play();
+            attackSound_dynamic.Stop();
+        }
     }
 
     void Start()
     {
-        if ( PlayerPrefs.HasKey("checkpoint") == false)
+        // if ( PlayerPrefs.HasKey("checkpoint") == false)
             PlayerPrefs.SetInt("checkpoint", 0);
 
+        curCheckpointItem = GetCheckpoint();
         PlayBackgroundSound();
     }
 
     void Update()
     {
-        
+        if( curCheckpointItem != GetCheckpoint() ){
+            curCheckpointItem = GetCheckpoint();
+            PlayBackgroundSound();
+        }
     }
 }
