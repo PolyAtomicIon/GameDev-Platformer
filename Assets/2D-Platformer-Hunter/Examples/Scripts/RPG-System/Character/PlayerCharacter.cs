@@ -41,6 +41,7 @@ public class PlayerCharacter : MonoBehaviour, IDamagable, IHasInventory, IHasEqu
     private bool isSuperPowerMode = false;
     private float superPowerTime = 0;
     private float startSuperPowerTime = 0.3f;
+    public GameObject superPowerSprite;
     void SuperPowerMode(){
         if( !isSuperPowerMode ){
             if( Mana > 0 ){
@@ -54,10 +55,12 @@ public class PlayerCharacter : MonoBehaviour, IDamagable, IHasInventory, IHasEqu
 
     void ActivateSuperPowerMode(){
         isSuperPowerMode = true;
+        superPowerSprite.SetActive(true);
         m_MovementController.AllowToWallClimb();
     }
     void DeactivateSuperPowerMode(){
         isSuperPowerMode = false;
+        superPowerSprite.SetActive(false);
         m_MovementController.PreventToWallClimb();
     }
 
