@@ -215,6 +215,12 @@ namespace DYP
 
         [SerializeField]
         private WallInteraction m_WallInteraction;
+        public void AllowToWallClimb(){
+            m_WallInteraction.CanWallClimb = true;
+        }
+        public void PreventToWallClimb(){
+            m_WallInteraction.CanWallClimb = false;
+        }
 
         private MotorState m_MotorState;
 

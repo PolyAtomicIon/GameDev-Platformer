@@ -5,9 +5,26 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+    public AudioSource attackSound_dynamic;
+    public AudioSource attackSound_peaceful;
 
-    
-    public List<Checkpoint> checkpoints; 
+    [System.Serializable]
+    public class CheckpointItem
+    {
+        public bool isDynamicMusic;
+        public Checkpoint point;
+
+        public Vector3 GetPosition(){
+            return point.GetPosition();
+        }
+        public bool IsDynamicMusic(){
+            return isDynamicMusic;
+        }
+
+    }
+
+    [SerializeField]
+    public List<CheckpointItem> checkpoints; 
 
     public void RestartLevel(){
 
@@ -17,15 +34,19 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
-    public Vector3 GetCheckpoint(){
+    public CheckpointItem GetCheckpoint(){
         int index = PlayerPrefs.GetInt("checkpoint");
-        checkpoints[index].ActivateCheckpoint();
-        return checkpoints[index].GetPosition();
+        int index2 = GetLastActiveCheckpoint();
+
+        index = Mathf.Max(index, index2);
+
+        checkpoints[index].point.ActivateCheckpoint();
+        return checkpoints[index];
     }
 
     public int GetLastActiveCheckpoint(){
         for(int i = checkpoints.Count - 1; i >= 0; i --){
-            if( checkpoints[i].IsActivated() ){
+            if( checkpoints[i].point.IsActivated() ){
                 return i;
             }
         }
@@ -33,13 +54,22 @@ public class GameManager : MonoBehaviour
         return 0;
     }
 
+    void PlayBackgroundSound(){
+        CheckpointItem curCheckpoint = GetCheckpoint();
+        if( curCheckpoint.IsDynamicMusic() )
+            attackSound_dynamic.Play();
+        else
+            attackSound_peaceful.Play();
+    }
+
     void Start()
     {
         if ( PlayerPrefs.HasKey("checkpoint") == false)
             PlayerPrefs.SetInt("checkpoint", 0);
+
+        PlayBackgroundSound();
     }
 
-    // Update is called once per frame
     void Update()
     {
         

@@ -37,6 +37,46 @@ public class PlayerCharacter : MonoBehaviour, IDamagable, IHasInventory, IHasEqu
 
     public GameManager gameManager;
 
+    public float superPowerManaAmount;
+    private bool isSuperPowerMode = false;
+    private float superPowerTime = 0;
+    private float startSuperPowerTime = 0.3f;
+    void SuperPowerMode(){
+        if( !isSuperPowerMode ){
+            if( Mana > 0 ){
+                ActivateSuperPowerMode();
+            }
+        }
+        else{
+            DeactivateSuperPowerMode();
+        }
+    }
+
+    void ActivateSuperPowerMode(){
+        isSuperPowerMode = true;
+        m_MovementController.AllowToWallClimb();
+    }
+    void DeactivateSuperPowerMode(){
+        isSuperPowerMode = false;
+        m_MovementController.PreventToWallClimb();
+    }
+
+    void onSuperPowerMode(){
+
+        if( !isSuperPowerMode )
+            return;
+        
+        if( Mana <= 0 )
+            DeactivateSuperPowerMode();
+
+        superPowerTime -= Time.deltaTime;
+        if (superPowerTime <= 0)
+        {
+            superPowerTime = startSuperPowerTime;
+            UseMana(-superPowerManaAmount);
+        }
+
+    }
     private void MagicAttack(){
         if(Mana <= attackManaAmount){
             Debug.Log("not enough man");
@@ -70,7 +110,7 @@ public class PlayerCharacter : MonoBehaviour, IDamagable, IHasInventory, IHasEqu
     }
 
     void RecoverMana(){
-        
+
         manaRecoveryTime -= Time.deltaTime;
         if (manaRecoveryTime <= 0)
         {
@@ -78,6 +118,10 @@ public class PlayerCharacter : MonoBehaviour, IDamagable, IHasInventory, IHasEqu
             UseMana(recoverManaAmount);
         }
 
+    }
+
+    void playOnSoundAudio(){
+        Debug.Log("Jump SOund");
     }
 
     private void Awake()
@@ -98,7 +142,7 @@ public class PlayerCharacter : MonoBehaviour, IDamagable, IHasInventory, IHasEqu
         initCallback();
         Health = 100f;
 
-        transform.position = gameManager.GetCheckpoint();
+        transform.position = gameManager.GetCheckpoint().GetPosition();
 
     }
 
@@ -113,6 +157,10 @@ public class PlayerCharacter : MonoBehaviour, IDamagable, IHasInventory, IHasEqu
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
 
+        if( Input.GetKeyDown(KeyCode.E) ){
+            SuperPowerMode();
+        }
+
         if( Input.GetMouseButtonDown(0) ){
             Debug.Log("Weapon ATTACK");
             Weapon.Attack();
@@ -124,14 +172,20 @@ public class PlayerCharacter : MonoBehaviour, IDamagable, IHasInventory, IHasEqu
         }
         
         RecoverMana();
+        onSuperPowerMode();
 
     }
 
     private void initCallback()
     {
-        m_MovementController.OnAirJump += delegate { m_StatController.JumpCounter++; };
+        m_MovementController.OnAirJump += delegate { 
+            m_StatController.JumpCounter++; 
+            playOnSoundAudio();
+        };
         m_MovementController.OnResetJumpCounter += delegate (MotorState state) { m_StatController.JumpCounter = 0; };
-        m_MovementController.CanAirJumpFunc = delegate { return m_StatController.JumpCounter < (int)m_StatController.JumpCount.Value; };
+        m_MovementController.CanAirJumpFunc = delegate { 
+            return m_StatController.JumpCounter < (int)m_StatController.JumpCount.Value;
+        };
     }
 
     public void UseItem(BaseItem item)
