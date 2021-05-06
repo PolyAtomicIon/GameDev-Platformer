@@ -97,12 +97,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 20
-  lifeTime: 1.5
+  lifeTime: 1
   distance: 0.5
   damage: 5
   TargetsTags:
   - Enemy
-  destroyEffect: {fileID: 4122184516997705474, guid: fe4eb5b8724b2c243b97a9572ba63658,
+  destroyEffect: {fileID: 3066997272238201581, guid: ba735c1663922d945aef0c9bdbd71850,
     type: 3}
 --- !u!58 &931289660725452235
 CircleCollider2D:
