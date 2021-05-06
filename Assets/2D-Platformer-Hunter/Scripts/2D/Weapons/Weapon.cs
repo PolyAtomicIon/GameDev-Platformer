@@ -32,9 +32,16 @@ public class Weapon : MonoBehaviour
             attackSound.Play();
     }
 
-    public void PlayVFX(){
+
+    public IEnumerator PlayVFX(){
+
         if( shotVFX )
             shotVFX.SetActive(true);
+
+        yield return new WaitForSeconds(0.75f);
+
+        if( shotVFX )
+            shotVFX.SetActive(false);
     }
 
     // ex: shoot a bullet, check for collisions
@@ -49,7 +56,7 @@ public class Weapon : MonoBehaviour
             HandlePhysicsOfAttack();
             ResetTimer();
             PlayAudio();
-            PlayVFX();
+            StartCoroutine(PlayVFX());
             // Activate VFX
             // Activate Animation
             // Ammo modification: decrease number of bullets -> RangedWeopon

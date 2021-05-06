@@ -79,6 +79,7 @@ MonoBehaviour:
   startTimeBtwShots: 0.15
   attackPos: {fileID: 2976925896708493167}
   attackSound: {fileID: 2420645579983101268}
+  shotVFX: {fileID: 0}
   whatIsEnemies:
     serializedVersion: 2
     m_Bits: 256
