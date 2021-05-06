@@ -32,7 +32,7 @@ namespace Array2DEditor
         GameObject piece;
         GameObject[,] gameObjects;
 
-        public bool stopGeneration = true;
+        private bool stopGeneration = false;
 
         GameObject getRandomPrefabByKey(string key){
             foreach(RoomCell cell in prefabs){
@@ -97,7 +97,8 @@ namespace Array2DEditor
                             InstantiatePrefab(x, y, cells[y, x]);
                         }
                     }
-                }                
+                }           
+                stopGeneration = true;     
             }
 
         }
