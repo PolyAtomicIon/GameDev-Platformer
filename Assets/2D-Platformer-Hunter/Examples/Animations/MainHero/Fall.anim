@@ -3,9 +3,8 @@
 --- !u!74 &7400000
 AnimationClip:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
   m_Name: Fall
   serializedVersion: 6
   m_Legacy: 0
@@ -20,11 +19,9 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: 2712104318801399939, guid: a68b329648c41ba4894cd42ec8feb54f,
-        type: 3}
+      value: {fileID: 21300000, guid: 5c6f5c819b4748d45908b7fb80010be0, type: 3}
     - time: 0.1
-      value: {fileID: 1169570914964810191, guid: a68b329648c41ba4894cd42ec8feb54f,
-        type: 3}
+      value: {fileID: 21300000, guid: 1f54d625ef637fa47af6bc5ae37a1e8e, type: 3}
     attribute: m_Sprite
     path: Appearance/Sprite
     classID: 212
@@ -44,8 +41,8 @@ AnimationClip:
       customType: 23
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: 2712104318801399939, guid: a68b329648c41ba4894cd42ec8feb54f, type: 3}
-    - {fileID: 1169570914964810191, guid: a68b329648c41ba4894cd42ec8feb54f, type: 3}
+    - {fileID: 21300000, guid: 5c6f5c819b4748d45908b7fb80010be0, type: 3}
+    - {fileID: 21300000, guid: 1f54d625ef637fa47af6bc5ae37a1e8e, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
@@ -70,4 +67,5 @@ AnimationClip:
   m_EulerEditorCurves: []
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
+  m_GenerateMotionCurves: 0
   m_Events: []

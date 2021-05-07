@@ -3,8 +3,9 @@
 --- !u!74 &7400000
 AnimationClip:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_Name: Idle
   serializedVersion: 6
   m_Legacy: 0
@@ -19,11 +20,20 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: 21300000, guid: fdbe3b55b0b40fc40b77c67ad114ca70, type: 3}
+      value: {fileID: -5183652947351054844, guid: dba7f47f0d112674da4d6a491c46b424,
+        type: 3}
     - time: 0.2
-      value: {fileID: 21300000, guid: 0af0f0780e7a1d3459f26e6cf42cfe29, type: 3}
+      value: {fileID: -5710967897864934451, guid: dba7f47f0d112674da4d6a491c46b424,
+        type: 3}
     - time: 0.4
-      value: {fileID: 21300000, guid: 767ba540e50781e43952f36ffb883fe5, type: 3}
+      value: {fileID: 680389042302488003, guid: dba7f47f0d112674da4d6a491c46b424,
+        type: 3}
+    - time: 0.6
+      value: {fileID: 3087424418511432868, guid: dba7f47f0d112674da4d6a491c46b424,
+        type: 3}
+    - time: 0.8
+      value: {fileID: 400781087307374657, guid: dba7f47f0d112674da4d6a491c46b424,
+        type: 3}
     attribute: m_Sprite
     path: Appearance/Sprite
     classID: 212
@@ -43,15 +53,17 @@ AnimationClip:
       customType: 23
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: 21300000, guid: fdbe3b55b0b40fc40b77c67ad114ca70, type: 3}
-    - {fileID: 21300000, guid: 0af0f0780e7a1d3459f26e6cf42cfe29, type: 3}
-    - {fileID: 21300000, guid: 767ba540e50781e43952f36ffb883fe5, type: 3}
+    - {fileID: -5183652947351054844, guid: dba7f47f0d112674da4d6a491c46b424, type: 3}
+    - {fileID: -5710967897864934451, guid: dba7f47f0d112674da4d6a491c46b424, type: 3}
+    - {fileID: 680389042302488003, guid: dba7f47f0d112674da4d6a491c46b424, type: 3}
+    - {fileID: 3087424418511432868, guid: dba7f47f0d112674da4d6a491c46b424, type: 3}
+    - {fileID: 400781087307374657, guid: dba7f47f0d112674da4d6a491c46b424, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.6
+    m_StopTime: 1
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -70,5 +82,4 @@ AnimationClip:
   m_EulerEditorCurves: []
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
-  m_GenerateMotionCurves: 0
   m_Events: []
