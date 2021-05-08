@@ -49,7 +49,7 @@ MonoBehaviour:
   speed: 20
   lifeTime: 1.5
   distance: 0.5
-  damage: 5
+  damage: 32
   TargetsTags:
   - Enemy
   destroyEffect: {fileID: 4122184516997705474, guid: fe4eb5b8724b2c243b97a9572ba63658,

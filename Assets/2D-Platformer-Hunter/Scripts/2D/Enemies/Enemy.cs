@@ -72,12 +72,14 @@ public class Enemy : MonoBehaviour, IDamagable
     }
 
 	public virtual void TakeDamage (float damage){
-        Debug.Log("damge taken");
 
         Health -= damage;
         StartCoroutine(PlayDamageAnimation());
-
+     
+        Debug.Log("damge taken");
         Debug.Log(damage);
+        Debug.Log(Health);
+     
         if( Health <= 0 )
             Destroy(gameObject);
     }
@@ -105,6 +107,8 @@ public class Enemy : MonoBehaviour, IDamagable
         rb2D = GetComponent<Rigidbody2D>();
 
         animator = GetComponent<Animator>();
+
+        Health = 100;
 
     }
 
