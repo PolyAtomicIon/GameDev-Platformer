@@ -100,8 +100,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7078383150165447496, guid: 63bc8f4c7dbcb2449bc098ee1f7bf2c4,
-    type: 3}
+  m_Sprite: {fileID: 815424164945274260, guid: 8d8e8048e3a4df84a96d838e6efd728d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -125,6 +124,7 @@ GameObject:
   - component: {fileID: 8326345800403291571}
   - component: {fileID: 4759253141299530523}
   - component: {fileID: 2178639208364583920}
+  - component: {fileID: 6535421198002556781}
   m_Layer: 8
   m_Name: PatrolEnemyMelee
   m_TagString: Enemy
@@ -183,7 +183,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.1732192, y: -0.1223011}
+  m_Offset: {x: -0.099402905, y: -0.1223011}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -194,7 +194,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.1426516, y: 2.386077}
+  m_Size: {x: 1.843915, y: 2.386077}
   m_EdgeRadius: 0
 --- !u!114 &4759253141299530523
 MonoBehaviour:
@@ -225,7 +225,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb2D: {fileID: 0}
-  radius: 1
+  radius: 3
   player: {fileID: 0}
   Weapon: {fileID: 4759253141299530523}
   HitableTargets:
@@ -233,11 +233,30 @@ MonoBehaviour:
     m_Bits: 1024
   direction: 1
   animator: {fileID: 0}
-  speed: 100
+  speed: 150
   groundDetection: {fileID: 2239613777761772766}
   EnvironmentLayer:
     serializedVersion: 2
     m_Bits: 512
+--- !u!95 &6535421198002556781
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8326345800403291570}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 522adfddb01a7b040ab57fea86fdc7f8, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &5043484246401212988
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -268,12 +287,12 @@ PrefabInstance:
     - target: {fileID: 4613198165636216457, guid: 4f175728fcd7ac7418c71d1e63a9bd76,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.02
+      value: 1.45
       objectReference: {fileID: 0}
     - target: {fileID: 4613198165636216457, guid: 4f175728fcd7ac7418c71d1e63a9bd76,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.46
+      value: 0.28
       objectReference: {fileID: 0}
     - target: {fileID: 4613198165636216457, guid: 4f175728fcd7ac7418c71d1e63a9bd76,
         type: 3}
@@ -335,6 +354,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Color.r
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4932875695685637410, guid: 4f175728fcd7ac7418c71d1e63a9bd76,
+        type: 3}
+      propertyPath: damage
+      value: 28
+      objectReference: {fileID: 0}
+    - target: {fileID: 4932875695685637410, guid: 4f175728fcd7ac7418c71d1e63a9bd76,
+        type: 3}
+      propertyPath: attackRange
+      value: 1.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 4932875695685637410, guid: 4f175728fcd7ac7418c71d1e63a9bd76,
+        type: 3}
+      propertyPath: startTimeBtwShots
+      value: 1.05
       objectReference: {fileID: 0}
     - target: {fileID: 4932875695685637410, guid: 4f175728fcd7ac7418c71d1e63a9bd76,
         type: 3}

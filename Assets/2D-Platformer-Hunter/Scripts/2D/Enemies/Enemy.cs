@@ -18,6 +18,8 @@ public class Enemy : MonoBehaviour, IDamagable
     public LayerMask HitableTargets;
     public int direction = 1;
 
+    private Animator animator;
+
     public bool IsPlayerInFieldOfVision() {
         if( player )
             return true;
@@ -38,6 +40,22 @@ public class Enemy : MonoBehaviour, IDamagable
         }
     }
 
+    public IEnumerator PlayDamageAnimation(){
+        animator.SetBool("onDamage", true);
+
+        yield return new WaitForSeconds(0.225f);
+
+        animator.SetBool("onDamage", false);
+    }
+
+    public IEnumerator PlayAttackAnimation(){
+        animator.SetBool("isAttacking", true);
+
+        yield return new WaitForSeconds(0.225f);
+
+        animator.SetBool("isAttacking", false);
+    }
+
     public void AttackIfPlayerDetected(){
         if( !IsPlayerInFieldOfVision() )
             return;
@@ -45,6 +63,7 @@ public class Enemy : MonoBehaviour, IDamagable
         LookStraightToPlayer();
 
         if( Weapon ){
+            StartCoroutine(PlayAttackAnimation());
             Weapon.Attack();
         }
         // Activate SOUND
@@ -56,9 +75,11 @@ public class Enemy : MonoBehaviour, IDamagable
         Debug.Log("damge taken");
 
         Health -= damage;
+        StartCoroutine(PlayDamageAnimation());
 
         Debug.Log(damage);
-        Destroy(gameObject);
+        if( Health <= 0 )
+            Destroy(gameObject);
     }
 
     public bool IsGrounded() {
@@ -82,6 +103,9 @@ public class Enemy : MonoBehaviour, IDamagable
         if( Weapon )
             Weapon.Initialize();
         rb2D = GetComponent<Rigidbody2D>();
+
+        animator = GetComponent<Animator>();
+
     }
 
     public virtual void Behave(){
