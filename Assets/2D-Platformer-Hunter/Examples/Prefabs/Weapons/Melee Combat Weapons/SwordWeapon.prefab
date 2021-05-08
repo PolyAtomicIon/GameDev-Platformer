@@ -79,6 +79,7 @@ MonoBehaviour:
   startTimeBtwShots: 0.15
   attackPos: {fileID: 2976925896708493167}
   attackSound: {fileID: 2420645579983101268}
+  animationName: isMeleeAttack
   shotVFX: {fileID: 0}
   whatIsEnemies:
     serializedVersion: 2
@@ -92,7 +93,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4613198165636216456}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1

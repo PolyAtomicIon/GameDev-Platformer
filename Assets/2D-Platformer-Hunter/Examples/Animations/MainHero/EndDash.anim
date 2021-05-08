@@ -3,8 +3,9 @@
 --- !u!74 &7400000
 AnimationClip:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_Name: EndDash
   serializedVersion: 6
   m_Legacy: 0
@@ -19,11 +20,14 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: 21300000, guid: e74eafe06c9561942882540cc0f58565, type: 3}
+      value: {fileID: -7848039375673857549, guid: d9c90e3379a080b47809c0c63a541736,
+        type: 3}
     - time: 0.033333335
-      value: {fileID: 21300000, guid: 4020942996b605f4585249a773a7b701, type: 3}
+      value: {fileID: 1228786266525858794, guid: d9c90e3379a080b47809c0c63a541736,
+        type: 3}
     - time: 0.06666667
-      value: {fileID: 21300000, guid: 4bfdd2af37ecd964798d85d38c0a9108, type: 3}
+      value: {fileID: 1228786266525858794, guid: d9c90e3379a080b47809c0c63a541736,
+        type: 3}
     attribute: m_Sprite
     path: Appearance/Sprite
     classID: 212
@@ -43,9 +47,9 @@ AnimationClip:
       customType: 23
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: 21300000, guid: e74eafe06c9561942882540cc0f58565, type: 3}
-    - {fileID: 21300000, guid: 4020942996b605f4585249a773a7b701, type: 3}
-    - {fileID: 21300000, guid: 4bfdd2af37ecd964798d85d38c0a9108, type: 3}
+    - {fileID: -7848039375673857549, guid: d9c90e3379a080b47809c0c63a541736, type: 3}
+    - {fileID: 1228786266525858794, guid: d9c90e3379a080b47809c0c63a541736, type: 3}
+    - {fileID: 1228786266525858794, guid: d9c90e3379a080b47809c0c63a541736, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
@@ -70,5 +74,4 @@ AnimationClip:
   m_EulerEditorCurves: []
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
-  m_GenerateMotionCurves: 0
   m_Events: []

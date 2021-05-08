@@ -29,5 +29,4 @@ public class MeleeCombatWeapon : Weapon
         Gizmos.DrawWireSphere(attackPos.position, attackRange);
     }
 
-
 }

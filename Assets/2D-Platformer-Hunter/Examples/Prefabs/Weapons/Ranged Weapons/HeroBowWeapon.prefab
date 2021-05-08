@@ -211,6 +211,8 @@ MonoBehaviour:
   startTimeBtwShots: 0.35
   attackPos: {fileID: 319833660380761574}
   attackSound: {fileID: 6527637498348748877}
+  shotVFX: {fileID: 0}
+  animationName: isRangedAttack
   offset: 0
   projectile: {fileID: 4209057260513843309, guid: ccf91cbb58745ef4e87c15bc28fbcfe3,
     type: 3}

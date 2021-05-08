@@ -42,6 +42,7 @@ public class PlayerCharacter : MonoBehaviour, IDamagable, IHasInventory, IHasEqu
     private float superPowerTime = 0;
     private float startSuperPowerTime = 0.3f;
     public GameObject superPowerSprite;
+
     void SuperPowerMode(){
         if( !isSuperPowerMode ){
             if( Mana > 0 ){

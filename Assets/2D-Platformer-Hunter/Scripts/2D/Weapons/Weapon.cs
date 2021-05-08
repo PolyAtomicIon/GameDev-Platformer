@@ -9,6 +9,8 @@ public class Weapon : MonoBehaviour
     public Transform attackPos;
     public AudioSource attackSound;
 
+    private Animator m_Animator;
+    public string animationName;
     public GameObject shotVFX;
 
     public void Activate(){
@@ -44,6 +46,16 @@ public class Weapon : MonoBehaviour
             shotVFX.SetActive(false);
     }
 
+    
+    public IEnumerator PlayAnimation(){
+        m_Animator.SetBool(animationName, true);
+
+        yield return new WaitForSeconds(0.175f);
+
+        m_Animator.SetBool(animationName, false);
+    }
+
+
     // ex: shoot a bullet, check for collisions
     public virtual void HandlePhysicsOfAttack(){
         Debug.Log("handling physics of attack:)");
@@ -57,12 +69,16 @@ public class Weapon : MonoBehaviour
             ResetTimer();
             PlayAudio();
             StartCoroutine(PlayVFX());
-            // Activate VFX
-            // Activate Animation
+            StartCoroutine(PlayAnimation());
             // Ammo modification: decrease number of bullets -> RangedWeopon
             return true;
         }
         return false;
+    }
+
+
+    void Awake () {
+        m_Animator = GameObject.FindGameObjectsWithTag("Player")[0].GetComponent<Animator> ();
     }
 
     public void Start(){
