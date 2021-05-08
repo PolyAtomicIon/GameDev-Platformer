@@ -27,7 +27,15 @@ public class RangedWeapon : Weapon
     // Handles the weapon rotation
     public void SetWeaponAngle(Vector3 difference){
         float rotZ = Mathf.Atan2(difference.y, difference.x) * Mathf.Rad2Deg;
-        transform.rotation = Quaternion.Euler(0f, 0f, rotZ + offset);
+        rotZ += offset;
+
+        int dir = 1;
+        // if( rotZ < 0 ){
+        //     dir = -1;
+        // }
+
+        // rotZ = Mathf.Min(45f, Mathf.Abs(rotZ));
+        transform.rotation = Quaternion.Euler(0f, 0f, dir * rotZ);
     }
 
     public void Update()

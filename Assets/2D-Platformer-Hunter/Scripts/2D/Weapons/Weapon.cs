@@ -18,6 +18,8 @@ public class Weapon : MonoBehaviour
     }
 
     public void Deactivate(){
+        if(m_Animator)
+            m_Animator.SetBool(animationName, false);
         gameObject.SetActive(false);
     }
     
@@ -50,7 +52,7 @@ public class Weapon : MonoBehaviour
     public IEnumerator PlayAnimation(){
         m_Animator.SetBool(animationName, true);
 
-        yield return new WaitForSeconds(0.175f);
+        yield return new WaitForSeconds(0.225f);
 
         m_Animator.SetBool(animationName, false);
     }
