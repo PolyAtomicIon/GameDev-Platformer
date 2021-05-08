@@ -31,6 +31,7 @@ public class PlayerCharacter : MonoBehaviour, IDamagable, IHasInventory, IHasEqu
     public Equipment Equipment { get { return m_Equipment; } }
 
     private CombatInventory Weapon;
+    private Animator m_Animator;
     
 	public float Health { get; set; }
     TextMeshProUGUI HealthTextLabel ;
@@ -100,11 +101,24 @@ public class PlayerCharacter : MonoBehaviour, IDamagable, IHasInventory, IHasEqu
             ManaBar.fillAmount = Mana / 100;
     }
 
+    
+    public IEnumerator PlayDamageAnimation(){
+        m_Animator.SetBool("onDamage", true);
+
+        yield return new WaitForSeconds(0.225f);
+
+        m_Animator.SetBool("onDamage", false);
+    }
+
+
 	public void TakeDamage (float damage){
         // Debug.Log("Soo We will change Health variabe");
         if(Health <= 0){
             return;
         }
+
+        StartCoroutine(PlayDamageAnimation());
+
         Health -= damage;
         HealthBar.fillAmount = Health / 100;
         if(Health <= 0){
@@ -147,6 +161,8 @@ public class PlayerCharacter : MonoBehaviour, IDamagable, IHasInventory, IHasEqu
         Health = 100f;
 
         transform.position = gameManager.GetCheckpoint().GetPosition();
+
+        m_Animator = GetComponent<Animator>();
 
     }
 
