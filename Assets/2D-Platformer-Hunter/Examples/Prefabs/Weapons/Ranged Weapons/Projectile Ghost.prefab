@@ -46,9 +46,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 507d9005f3b78064ba2d596714b1b585, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 20
+  speed: 27
   lifeTime: 1.5
-  distance: 0.5
+  distance: 2.53
   damage: 5
   TargetsTags:
   - Player

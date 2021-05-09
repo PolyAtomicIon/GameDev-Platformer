@@ -167,7 +167,7 @@ MonoBehaviour:
   repathRate: 0.5
   canSearch: 1
   canMove: 1
-  maxSpeed: 4.5
+  maxSpeed: 6.5
   gravity: {x: 0, y: 0, z: 0}
   groundMask:
     serializedVersion: 2
@@ -178,9 +178,9 @@ MonoBehaviour:
   targetCompatibility: {fileID: 0}
   maxAcceleration: -2.5
   rotationSpeed: 360
-  slowdownDistance: 7
+  slowdownDistance: 6.2
   pickNextWaypointDist: 1.2
-  endReachedDistance: 4
+  endReachedDistance: 3.85
   alwaysDrawGizmos: 0
   slowWhenNotFacingTarget: 1
   whenCloseToDestination: 0
@@ -289,6 +289,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4781833675020192764}
     m_Modifications:
+    - target: {fileID: 319833660380761574, guid: 5578c07ee468b2944b8558c5984a239d,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.43
+      objectReference: {fileID: 0}
+    - target: {fileID: 319833660380761574, guid: 5578c07ee468b2944b8558c5984a239d,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 319833660479405711, guid: 5578c07ee468b2944b8558c5984a239d,
         type: 3}
       propertyPath: m_IsActive
