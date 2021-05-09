@@ -96,10 +96,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 507d9005f3b78064ba2d596714b1b585, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 20
-  lifeTime: 1.5
-  distance: 0.5
-  damage: 5
+  speed: 30
+  lifeTime: 3
+  distance: 1
+  damage: 25
   TargetsTags:
   - Player
   destroyEffect: {fileID: 5091765968196231200, guid: 02be5c9fc66258c4fa03adc0b1219627,

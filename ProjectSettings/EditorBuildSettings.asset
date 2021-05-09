@@ -6,6 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/2D-Platformer-Hunter/Examples/Scenes/Level1.unity
-    guid: 90a649a7945da974a82fe23a139b2ccd
+    path: Assets/2D-Platformer-Hunter/Examples/Scenes/first-level.unity
+    guid: ce51b817b024c414ba15a20a219f5dbd
   m_configObjects: {}
