@@ -49,7 +49,16 @@ public class Projectile : MonoBehaviour {
     }
 
     void DestroyProjectile() {
-        Instantiate(destroyEffect, transform.position, Quaternion.identity);
         Destroy(gameObject);
+        StartCoroutine(ActivateVFX());
     }
+
+    IEnumerator ActivateVFX(){
+        GameObject vfx_go = Instantiate(destroyEffect, transform.position, Quaternion.identity);
+
+        yield return new WaitForSeconds(1.5f);
+
+        Destroy(vfx_go);
+    }
+
 }

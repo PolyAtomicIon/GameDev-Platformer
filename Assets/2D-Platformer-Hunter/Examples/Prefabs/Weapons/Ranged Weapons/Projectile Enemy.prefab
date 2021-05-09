@@ -52,7 +52,7 @@ MonoBehaviour:
   damage: 5
   TargetsTags:
   - Player
-  destroyEffect: {fileID: 5091765968196231200, guid: 02be5c9fc66258c4fa03adc0b1219627,
+  destroyEffect: {fileID: 4708881189364177147, guid: 6d6a656de0b415c45bbb5d54697a8a1b,
     type: 3}
 --- !u!58 &931289660725452235
 CircleCollider2D:
