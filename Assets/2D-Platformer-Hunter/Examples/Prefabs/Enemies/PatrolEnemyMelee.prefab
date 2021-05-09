@@ -102,7 +102,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 815424164945274260, guid: 8d8e8048e3a4df84a96d838e6efd728d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 1, y: 1}
@@ -287,12 +287,12 @@ PrefabInstance:
     - target: {fileID: 4613198165636216457, guid: 4f175728fcd7ac7418c71d1e63a9bd76,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.45
+      value: 1.7
       objectReference: {fileID: 0}
     - target: {fileID: 4613198165636216457, guid: 4f175728fcd7ac7418c71d1e63a9bd76,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.28
+      value: -0.04
       objectReference: {fileID: 0}
     - target: {fileID: 4613198165636216457, guid: 4f175728fcd7ac7418c71d1e63a9bd76,
         type: 3}
@@ -367,8 +367,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4932875695685637410, guid: 4f175728fcd7ac7418c71d1e63a9bd76,
         type: 3}
+      propertyPath: animationName
+      value: isAttack
+      objectReference: {fileID: 0}
+    - target: {fileID: 4932875695685637410, guid: 4f175728fcd7ac7418c71d1e63a9bd76,
+        type: 3}
       propertyPath: startTimeBtwShots
-      value: 1.05
+      value: 0.6
       objectReference: {fileID: 0}
     - target: {fileID: 4932875695685637410, guid: 4f175728fcd7ac7418c71d1e63a9bd76,
         type: 3}

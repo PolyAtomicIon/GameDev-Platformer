@@ -52,7 +52,7 @@ public class Weapon : MonoBehaviour
     public IEnumerator PlayAnimation(){
         m_Animator.SetBool(animationName, true);
 
-        yield return new WaitForSeconds(0.225f);
+        yield return new WaitForSeconds(0.125f);
 
         m_Animator.SetBool(animationName, false);
     }

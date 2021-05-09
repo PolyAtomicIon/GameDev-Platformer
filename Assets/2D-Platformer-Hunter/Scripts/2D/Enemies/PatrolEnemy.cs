@@ -71,6 +71,8 @@ public class PatrolEnemy : Enemy
         //     speedByXAxis = 0;
         // }
 
+        if( IsPlayerInFieldOfVision() )
+            return;
         Vector3 newVelocity = new Vector3( speedByXAxis, rb2D.velocity.y, 0 );
         rb2D.velocity = newVelocity;
     }

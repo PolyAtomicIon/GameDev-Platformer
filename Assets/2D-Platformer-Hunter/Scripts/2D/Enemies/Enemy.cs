@@ -43,7 +43,7 @@ public class Enemy : MonoBehaviour, IDamagable
     public IEnumerator PlayDamageAnimation(){
         animator.SetBool("onDamage", true);
 
-        yield return new WaitForSeconds(0.35f);
+        yield return new WaitForSeconds(0.25f);
 
         animator.SetBool("onDamage", false);
     }
@@ -51,9 +51,18 @@ public class Enemy : MonoBehaviour, IDamagable
     public IEnumerator PlayAttackAnimation(){
         animator.SetBool("isAttacking", true);
 
-        yield return new WaitForSeconds(0.75f);
+        yield return new WaitForSeconds(0.35f);
 
         animator.SetBool("isAttacking", false);
+    }
+
+     IEnumerator PlayDeathAnimationAndDestroy(){
+        animator.SetBool("onDeath", true);
+
+        yield return new WaitForSeconds(0.515f);
+
+        animator.SetBool("onDeath", false);
+        Destroy(gameObject);
     }
 
     public void AttackIfPlayerDetected(){
@@ -63,8 +72,8 @@ public class Enemy : MonoBehaviour, IDamagable
         LookStraightToPlayer();
 
         if( Weapon ){
-            StartCoroutine(PlayAttackAnimation());
             Weapon.Attack();
+            StartCoroutine(PlayAttackAnimation());
         }
         // Activate SOUND
         // Activate VFX
@@ -80,8 +89,9 @@ public class Enemy : MonoBehaviour, IDamagable
         Debug.Log(damage);
         Debug.Log(Health);
      
-        if( Health <= 0 )
-            Destroy(gameObject);
+        if( Health <= 0 ){
+            StartCoroutine(PlayDeathAnimationAndDestroy());            
+        }
     }
 
     public bool IsGrounded() {
