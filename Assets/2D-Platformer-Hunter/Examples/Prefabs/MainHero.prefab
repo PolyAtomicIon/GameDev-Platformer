@@ -239,11 +239,11 @@ MonoBehaviour:
     CanWallSlide: 1
     WallStickTime: 0.15
     WallStickTimer: 0
-    WallSlideSpeedLoss: 0.05
-    WallSlidingSpeedMax: 2
+    WallSlideSpeedLoss: 5.28
+    WallSlidingSpeedMax: 50
     CanWallClimb: 0
-    WallClimbSpeed: 5
-    CanWallJump: 1
+    WallClimbSpeed: 7
+    CanWallJump: 0
     ClimbForce: {x: 12, y: 16}
     OffForce: {x: 8, y: 15}
     LeapForce: {x: 18, y: 17}

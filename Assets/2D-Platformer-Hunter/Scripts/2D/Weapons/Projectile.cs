@@ -14,6 +14,8 @@ public class Projectile : MonoBehaviour {
 
     private Rigidbody2D rb;
 
+    private bool isHitted = false;
+
     private void Awake() {
         rb = GetComponent<Rigidbody2D>();
     }
@@ -45,12 +47,14 @@ public class Projectile : MonoBehaviour {
             Debug.Log("hitted a target");
             collision.collider.GetComponent<IDamagable>().TakeDamage(damage);
         }
+        isHitted = true;
         DestroyProjectile();
     }
 
     void DestroyProjectile() {
         Destroy(gameObject);
-        StartCoroutine(ActivateVFX());
+        if( isHitted )
+            StartCoroutine(ActivateVFX());
     }
 
     IEnumerator ActivateVFX(){

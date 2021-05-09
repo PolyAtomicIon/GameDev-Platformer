@@ -217,9 +217,11 @@ namespace DYP
         private WallInteraction m_WallInteraction;
         public void AllowToWallClimb(){
             m_WallInteraction.CanWallClimb = true;
+            m_WallInteraction.CanWallJump = true;
         }
         public void PreventToWallClimb(){
             m_WallInteraction.CanWallClimb = false;
+            m_WallInteraction.CanWallJump = false;
         }
 
         private MotorState m_MotorState;
