@@ -59,7 +59,7 @@ public class Enemy : MonoBehaviour, IDamagable
      IEnumerator PlayDeathAnimationAndDestroy(){
         animator.SetBool("onDeath", true);
 
-        yield return new WaitForSeconds(0.515f);
+        yield return new WaitForSeconds(0.525f);
 
         animator.SetBool("onDeath", false);
         Destroy(gameObject);
