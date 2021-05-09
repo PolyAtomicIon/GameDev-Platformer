@@ -10,6 +10,11 @@ public class GameManager : MonoBehaviour
 
     private CheckpointItem curCheckpointItem;
 
+
+    public CursorMode cursorMode = CursorMode.Auto;
+    public Texture2D cursorTexture;
+    public Vector2 hotSpot = Vector2.zero;
+
     [System.Serializable]
     public class CheckpointItem
     {
@@ -74,6 +79,8 @@ public class GameManager : MonoBehaviour
 
         curCheckpointItem = GetCheckpoint();
         PlayBackgroundSound();
+
+        Cursor.SetCursor(cursorTexture, hotSpot, cursorMode);
     }
 
     void Update()
