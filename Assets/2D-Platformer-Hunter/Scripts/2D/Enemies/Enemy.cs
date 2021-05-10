@@ -18,6 +18,8 @@ public class Enemy : MonoBehaviour, IDamagable
     public LayerMask HitableTargets;
     public int direction = 1;
 
+    public float health = 100f;
+
     private Animator animator;
 
     public bool IsPlayerInFieldOfVision() {
@@ -43,12 +45,16 @@ public class Enemy : MonoBehaviour, IDamagable
     public IEnumerator PlayDamageAnimation(){
         animator.SetBool("onDamage", true);
 
-        yield return new WaitForSeconds(0.25f);
+        yield return new WaitForSeconds(0.55f);
 
         animator.SetBool("onDamage", false);
     }
 
     public IEnumerator PlayAttackAnimation(){
+
+        if( animator.GetBool("isAttacking") )
+            yield return null;
+
         animator.SetBool("isAttacking", true);
 
         yield return new WaitForSeconds(0.35f);
@@ -59,7 +65,7 @@ public class Enemy : MonoBehaviour, IDamagable
      IEnumerator PlayDeathAnimationAndDestroy(){
         animator.SetBool("onDeath", true);
 
-        yield return new WaitForSeconds(0.525f);
+        yield return new WaitForSeconds(0.85f);
 
         animator.SetBool("onDeath", false);
         Destroy(gameObject);
@@ -118,7 +124,8 @@ public class Enemy : MonoBehaviour, IDamagable
 
         animator = GetComponent<Animator>();
 
-        Health = 100;
+        // Health = 100;
+        Health = health;
 
     }
 
