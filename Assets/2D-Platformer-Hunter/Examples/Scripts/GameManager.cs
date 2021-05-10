@@ -10,6 +10,11 @@ public class GameManager : MonoBehaviour
 
     private CheckpointItem curCheckpointItem;
 
+
+    public CursorMode cursorMode = CursorMode.Auto;
+    public Texture2D cursorTexture;
+    public Vector2 hotSpot = Vector2.zero;
+
     [System.Serializable]
     public class CheckpointItem
     {
@@ -28,12 +33,29 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     public List<CheckpointItem> checkpoints; 
 
+    public GameObject pauseMenu;
+
+    public void PauseGame(){
+        Time.timeScale = 0;
+        pauseMenu.SetActive(true);
+    }
+
+    public void ResumeGame(){
+        Time.timeScale = 1;
+        pauseMenu.SetActive(false);
+    }
+
     public void RestartLevel(){
 
         PlayerPrefs.SetInt("checkpoint", GetLastActiveCheckpoint());
 
         Time.timeScale = 1;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+    public void ExitToMenu(){
+        Time.timeScale = 1;
+        SceneManager.LoadScene("MainPage");
     }
 
     public CheckpointItem GetCheckpoint(){
@@ -69,11 +91,13 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
-        // if ( PlayerPrefs.HasKey("checkpoint") == false)
+        if ( PlayerPrefs.HasKey("checkpoint") == false)
             PlayerPrefs.SetInt("checkpoint", 0);
 
         curCheckpointItem = GetCheckpoint();
         PlayBackgroundSound();
+
+        Cursor.SetCursor(cursorTexture, hotSpot, cursorMode);
     }
 
     void Update()

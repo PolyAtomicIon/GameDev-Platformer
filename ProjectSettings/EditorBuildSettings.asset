@@ -5,7 +5,13 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/2D-Platformer-Hunter/Examples/Scenes/Level1.unity
     guid: 90a649a7945da974a82fe23a139b2ccd
+  - enabled: 1
+    path: Assets/2D-Platformer-Hunter/Examples/Scenes/MainPage.unity
+    guid: 2eab6946b8ab8864b9c2858333a5c8e2
   m_configObjects: {}

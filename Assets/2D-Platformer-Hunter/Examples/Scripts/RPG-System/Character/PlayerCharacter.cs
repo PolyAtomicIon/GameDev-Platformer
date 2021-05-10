@@ -252,5 +252,10 @@ public class PlayerCharacter : MonoBehaviour, IDamagable, IHasInventory, IHasEqu
             // Debug.Log("dead");
             TakeDamage(onTrapDamageAmount);
         }
+        if (other.tag == "OutOfRange"){
+            // Debug.Log("dead");
+            // TakeDamage(onTrapDamageAmount);
+            gameManager.RestartLevel();
+        }
     }
 }

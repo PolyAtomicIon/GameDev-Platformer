@@ -9,6 +9,7 @@ public class PatrolEnemy : Enemy
     public float speed = 100f;
     public Transform groundDetection;
     public LayerMask EnvironmentLayer;
+    public bool isArcher;
 
     private float height;
 
@@ -71,8 +72,9 @@ public class PatrolEnemy : Enemy
         //     speedByXAxis = 0;
         // }
 
-        if( IsPlayerInFieldOfVision() )
+        if( IsPlayerInFieldOfVision() && isArcher )
             return;
+
         Vector3 newVelocity = new Vector3( speedByXAxis, rb2D.velocity.y, 0 );
         rb2D.velocity = newVelocity;
     }

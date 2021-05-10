@@ -47,9 +47,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 20
-  lifeTime: 1.5
+  lifeTime: 2.5
   distance: 0.5
-  damage: 32
+  damage: 25
   TargetsTags:
   - Enemy
   destroyEffect: {fileID: 4708881189364177147, guid: 6d6a656de0b415c45bbb5d54697a8a1b,
