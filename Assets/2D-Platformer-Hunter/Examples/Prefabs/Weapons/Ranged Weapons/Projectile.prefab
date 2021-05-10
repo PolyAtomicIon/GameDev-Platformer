@@ -47,7 +47,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 20
-  lifeTime: 1.5
+  lifeTime: 2.5
   distance: 0.5
   damage: 25
   TargetsTags:

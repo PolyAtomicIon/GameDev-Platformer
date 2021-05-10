@@ -55,7 +55,7 @@ public class GameManager : MonoBehaviour
 
     public void ExitToMenu(){
         Time.timeScale = 1;
-        SceneManager.LoadScene("MainMenu");
+        SceneManager.LoadScene("MainPage");
     }
 
     public CheckpointItem GetCheckpoint(){
