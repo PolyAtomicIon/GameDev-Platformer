@@ -30,6 +30,7 @@ namespace Array2DEditor
         private List<RoomCell> prefabs;
 
         GameObject piece;
+        public string roomName;
         GameObject[,] gameObjects;
 
         private bool stopGeneration = false;
@@ -71,10 +72,10 @@ namespace Array2DEditor
 
             if( !stopGeneration ){
                 if( piece == null ){
-                	piece = GameObject.Find("Piece");
+                	piece = GameObject.Find(roomName);
                     if( piece != null )
                         DestroyImmediate(piece);
-                    piece = new GameObject("Piece");
+                    piece = new GameObject(roomName);
                 }
                 
                 if( gameObjects == null )
