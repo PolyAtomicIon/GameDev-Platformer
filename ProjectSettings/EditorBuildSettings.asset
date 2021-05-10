@@ -9,9 +9,12 @@ EditorBuildSettings:
     path: 
     guid: 00000000000000000000000000000000
   - enabled: 1
+    path: Assets/2D-Platformer-Hunter/Examples/Scenes/MainPage.unity
+    guid: 2eab6946b8ab8864b9c2858333a5c8e2
+  - enabled: 1
     path: Assets/2D-Platformer-Hunter/Examples/Scenes/Level1.unity
     guid: 90a649a7945da974a82fe23a139b2ccd
   - enabled: 1
-    path: Assets/2D-Platformer-Hunter/Examples/Scenes/MainPage.unity
-    guid: 2eab6946b8ab8864b9c2858333a5c8e2
+    path: Assets/2D-Platformer-Hunter/Examples/Scenes/Level2.unity
+    guid: 26167e288238de943b334d75fe013d72
   m_configObjects: {}
