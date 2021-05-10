@@ -212,7 +212,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb2D: {fileID: 0}
-  radius: 10
+  radius: 18.8
   player: {fileID: 0}
   Weapon: {fileID: 7707009163538619810}
   HitableTargets:
@@ -375,6 +375,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6527637498348748877, guid: 5578c07ee468b2944b8558c5984a239d,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 9218a6c1fc2ec83459814b3461bcedff, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5578c07ee468b2944b8558c5984a239d, type: 3}
 --- !u!4 &5291676102522990836 stripped

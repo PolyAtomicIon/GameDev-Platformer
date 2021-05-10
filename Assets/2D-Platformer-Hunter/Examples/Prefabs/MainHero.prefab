@@ -337,7 +337,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de1aebef88baa3d478d3d3de64fee329, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  onTrapDamageAmount: 10
+  onTrapDamageAmount: 75
   HealthBar: {fileID: 0}
   Mana: 100
   attackManaAmount: 25
@@ -501,6 +501,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4952672776987999545}
     m_Modifications:
+    - target: {fileID: 2420645579983101268, guid: 4f175728fcd7ac7418c71d1e63a9bd76,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 26e19616f6ba9f6469e9d3d6c38b23fe, type: 3}
     - target: {fileID: 4613198165636216456, guid: 4f175728fcd7ac7418c71d1e63a9bd76,
         type: 3}
       propertyPath: m_Name
@@ -569,7 +574,7 @@ PrefabInstance:
     - target: {fileID: 4932875695685637410, guid: 4f175728fcd7ac7418c71d1e63a9bd76,
         type: 3}
       propertyPath: damage
-      value: 26
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 4932875695685637410, guid: 4f175728fcd7ac7418c71d1e63a9bd76,
         type: 3}
@@ -698,6 +703,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -90
       objectReference: {fileID: 0}
+    - target: {fileID: 6527637498348748877, guid: f4a28b7b2bf539b4c8ba08f000fc6236,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 9218a6c1fc2ec83459814b3461bcedff, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f4a28b7b2bf539b4c8ba08f000fc6236, type: 3}
 --- !u!4 &253429054386872632 stripped
@@ -826,6 +836,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4209057260513843309, guid: 57ed03962bb284d45a2200f3459d3de8,
         type: 3}
+    - target: {fileID: 6527637498348748877, guid: f4a28b7b2bf539b4c8ba08f000fc6236,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: b83cee73088599342a76b232dbc5639f, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f4a28b7b2bf539b4c8ba08f000fc6236, type: 3}
 --- !u!114 &5032581824229382516 stripped
@@ -916,7 +931,7 @@ PrefabInstance:
     - target: {fileID: 3373552363176205759, guid: ec8e3ef9156909341a509ec5c0558e85,
         type: 3}
       propertyPath: damage
-      value: 49
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 3373552363176205759, guid: ec8e3ef9156909341a509ec5c0558e85,
         type: 3}
@@ -938,6 +953,11 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: -2.93
       objectReference: {fileID: 0}
+    - target: {fileID: 5418815630760416713, guid: ec8e3ef9156909341a509ec5c0558e85,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 41e42eab6220e88478b28c6d277ed6b3, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec8e3ef9156909341a509ec5c0558e85, type: 3}
 --- !u!4 &6575359973736755827 stripped

@@ -139,7 +139,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6251805671345973705}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -51.8, y: -59.5, z: 10.828125}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -225,7 +225,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb2D: {fileID: 0}
-  radius: 8
+  radius: 9.63
   player: {fileID: 0}
   Weapon: {fileID: 7440998566728953696}
   HitableTargets:
@@ -238,6 +238,7 @@ MonoBehaviour:
   EnvironmentLayer:
     serializedVersion: 2
     m_Bits: 512
+  isArcher: 1
 --- !u!95 &9222674627040635670
 Animator:
   serializedVersion: 3
@@ -324,6 +325,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -90
       objectReference: {fileID: 0}
+    - target: {fileID: 6527637498348748877, guid: 5578c07ee468b2944b8558c5984a239d,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 789df294ad4013644892d404cb00e19e, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5578c07ee468b2944b8558c5984a239d, type: 3}
 --- !u!4 &179942212866415740 stripped
