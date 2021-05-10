@@ -97,7 +97,7 @@ public class GameManager : MonoBehaviour
         curCheckpointItem = GetCheckpoint();
         PlayBackgroundSound();
 
-        Cursor.SetCursor(cursorTexture, hotSpot, cursorMode);
+        // Cursor.SetCursor(cursorTexture, hotSpot, cursorMode);
     }
 
     void Update()
