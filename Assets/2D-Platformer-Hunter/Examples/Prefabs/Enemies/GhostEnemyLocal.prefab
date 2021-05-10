@@ -167,7 +167,7 @@ MonoBehaviour:
   repathRate: 0.5
   canSearch: 1
   canMove: 1
-  maxSpeed: 6.5
+  maxSpeed: 3
   gravity: {x: 0, y: 0, z: 0}
   groundMask:
     serializedVersion: 2
@@ -212,13 +212,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb2D: {fileID: 0}
-  radius: 18.8
+  radius: 12
   player: {fileID: 0}
   Weapon: {fileID: 7707009163538619810}
   HitableTargets:
     serializedVersion: 2
     m_Bits: 1024
   direction: 1
+  health: 100
   aiPath: {fileID: 0}
   gfx: {fileID: 4781833673342691509}
 --- !u!114 &7707009163538619810
@@ -370,6 +371,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4209057260513843309, guid: 7a463973fd7e44446b9888ab1cd3709f,
         type: 3}
+    - target: {fileID: 860606588243991985, guid: 5578c07ee468b2944b8558c5984a239d,
+        type: 3}
+      propertyPath: startTimeBtwShots
+      value: 0.9
+      objectReference: {fileID: 0}
     - target: {fileID: 4815421370005278614, guid: 5578c07ee468b2944b8558c5984a239d,
         type: 3}
       propertyPath: m_IsActive

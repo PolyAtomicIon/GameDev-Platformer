@@ -17,8 +17,11 @@ public class MainPage : MonoBehaviour
         
     }
 
-    public void StartGame(){
+    public void FirstLevel(){
         SceneManager.LoadScene("Level1");
     }
 
+    public void SecondLevel(){
+        SceneManager.LoadScene("Level2");
+    }
 }
